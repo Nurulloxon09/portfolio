@@ -1,0 +1,117 @@
+{
+  "_translation": "Drafted by AI from the Claude Design mockup (1a) and PLAN.md. Please proofread. Uzbek uses ʻ (U+02BB) in oʻ/gʻ and ʼ (U+02BC) for the tutuq belgisi.",
+  "meta": {
+    "title": "Nurulloxon — SAT Matematika oʻqituvchisi",
+    "description": "SAT Math 750, SAT 1440, IELTS 7.0. Namanganda SAT Matematika darslari: diagnostika, xatolar daftari va oʻquvchilar uchun oʻzim yaratgan vositalar."
+  },
+  "languages": {
+    "label": "Til",
+    "uz": "Oʻzbek",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "nav": {
+    "label": "Asosiy menyu",
+    "teach": "Nimani oʻrgataman",
+    "method": "Qanday oʻrgataman",
+    "tools": "Vositalar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "name": "Nurulloxon",
+    "location": "Namangan",
+    "title": "SAT Matematika oʻqituvchisi",
+    "photoTodo": "TODO: rasm",
+    "scoreScale": "SAT Math · 200–800",
+    "satMath": "SAT Math",
+    "outOf": "/ {max}",
+    "ielts": "IELTS",
+    "satTotal": "SAT umumiy",
+    "readingWriting": "Reading & Writing {score}",
+    "scoreAxisLabel": "SAT Math ballari 200 dan 800 gacha shkalada: {score}",
+    "contact": "Bogʻlanish",
+    "tools": "Oʻquvchi vositalari",
+    "sat": "SAT"
+  },
+  "teach": {
+    "title": "Nimani oʻrgataman",
+    "subtitle": "SAT Math — toʻrtta rasmiy yoʻnalish",
+    "algebra": "Algebra",
+    "advancedMath": "Advanced Math",
+    "problemSolving": "Masala yechish va maʼlumotlar tahlili",
+    "geometry": "Geometriya va trigonometriya",
+    "group": "Guruh",
+    "private": "Yakka tartibda",
+    "availabilityTodo": "TODO: kunlar va soatlar"
+  },
+  "experience": {
+    "title": "Oʻqitish tajribasi",
+    "role": "Asoschi",
+    "org": "Learning Skills Lab (LSL)",
+    "description": "Oʻquvchilarga IELTSdan dars berish.",
+    "startDateTodo": "TODO: boshlangan sana",
+    "studentsTodo": "TODO: oʻquvchilar soni",
+    "resultsTodo": "TODO: natijalar"
+  },
+  "method": {
+    "title": "Qanday oʻrgataman",
+    "step1": "Birinchi kuni diagnostik test — har bir oʻquvchi zaif mavzular uchun toʻliq reja bilan boshlaydi.",
+    "step2": "Darslar aynan shu zaif mavzular atrofida quriladi.",
+    "step3": "Har bir xatoni analiz qilish websitedan foydalana oladi.",
+    "step4": "Muntazam, vaqt bilan oʻtkaziladigan mock testlar.",
+    "step5": "Har bir oʻquvchining oʻsishini kuzatib, markaz bilan ulashaman.",
+    "confirmTodo": "TODO: qadamlarni tasdiqlang"
+  },
+  "tools": {
+    "title": "Oʻquvchilarim uchun yaratgan vositalarim",
+    "inDevelopment": "Ishlab chiqilmoqda",
+    "screenshotTodo": "TODO: skrinshot",
+    "onlineTodo": "TODO: onlaynmi?",
+    "open": "Ochish →",
+    "diagnosticKicker": "SAT",
+    "diagnosticTitle": "SAT Math diagnostikasi",
+    "diagnosticDescription": "Birinchi darsdayoq zaif mavzularni aniqlaydi.",
+    "mistakesKicker": "SAT · AI",
+    "mistakesTitle": "SAT xatolar tahlilchisi",
+    "mistakesDescription": "Xato savolni rasmga oling — nega xato boʻlganini oddiy tilda tushuntiradi.",
+    "ieltsKicker": "IELTS · AI",
+    "ieltsTitle": "IELTS Reading tahlilchisi",
+    "ieltsDescription": "Reading xatolarini sababi bilan tahlil qiladi."
+  },
+  "projects": {
+    "title": "Boshqa loyihalarim",
+    "uteach": "Oʻquv markazlarini boshqarish platformasi.",
+    "super": "Maktab oʻquvchilari uchun oliygohga tayyorlov — oʻyin uslubidagi ijtimoiy platforma.",
+    "uteachName": "uteach",
+    "superName": "SUper"
+  },
+  "leadership": {
+    "title": "Yetakchilik",
+    "inquirumRole": "Hammuassis",
+    "inquirumDescription": "Oʻzbekistondagi birinchi respublika miqyosidagi maktab oʻquvchilari uchun iqtisodiyot va ML tadqiqot musobaqasi.",
+    "yearTodo": "TODO: yil",
+    "participantsTodo": "TODO: ishtirokchilar soni",
+    "atlonRole": "Koordinatorlar rahbari",
+    "atlonDescription": "Bir nechta viloyatni qamragan yoshlar tashkiloti.",
+    "sizeTodo": "TODO: viloyatlar yoki aʼzolar soni",
+    "inquirumName": "Inquirum",
+    "atlonName": "Atlon Group"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "telegram": "Telegram",
+    "phone": "Telefon",
+    "telegramTodo": "@TODO_username",
+    "phoneTodo": "+998 TODO",
+    "copy": "Nusxa olish",
+    "copied": "Nusxa olindi",
+    "qrNote": "Shu sahifaga olib boruvchi QR — vizitkaga chop etish uchun.",
+    "qrAlt": "{url} manziliga olib boruvchi QR kod",
+    "qrTodo": "TODO: sayt manzili"
+  },
+  "footer": {
+    "studentLogin": "Oʻquvchi kabineti · tez orada",
+    "toDark": "☾ Tun rejimi",
+    "toLight": "☀ Kun rejimi"
+  }
+}

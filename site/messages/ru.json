@@ -1,0 +1,117 @@
+{
+  "_translation": "Machine-translated from uz.json by AI. Please proofread.",
+  "meta": {
+    "title": "Нуруллохон — преподаватель SAT Math",
+    "description": "SAT Math 750, SAT 1440, IELTS 7.0. Уроки SAT Math в Намангане: диагностика в первый день, журнал ошибок и инструменты, которые я сделал для учеников."
+  },
+  "languages": {
+    "label": "Язык",
+    "uz": "Oʻzbek",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "nav": {
+    "label": "Главное меню",
+    "teach": "Что преподаю",
+    "method": "Как преподаю",
+    "tools": "Инструменты",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "name": "Нуруллохон",
+    "location": "Наманган",
+    "title": "Преподаватель SAT Math",
+    "photoTodo": "TODO: фото",
+    "scoreScale": "SAT Math · 200–800",
+    "satMath": "SAT Math",
+    "outOf": "/ {max}",
+    "ielts": "IELTS",
+    "satTotal": "SAT общий",
+    "readingWriting": "Reading & Writing {score}",
+    "scoreAxisLabel": "Балл SAT Math на шкале от 200 до 800: {score}",
+    "contact": "Связаться",
+    "tools": "Инструменты",
+    "sat": "SAT"
+  },
+  "teach": {
+    "title": "Что преподаю",
+    "subtitle": "SAT Math — все четыре официальных раздела",
+    "algebra": "Алгебра",
+    "advancedMath": "Продвинутая математика",
+    "problemSolving": "Решение задач и анализ данных",
+    "geometry": "Геометрия и тригонометрия",
+    "group": "В группе",
+    "private": "Индивидуально",
+    "availabilityTodo": "TODO: дни и часы"
+  },
+  "experience": {
+    "title": "Опыт преподавания",
+    "role": "Основатель",
+    "org": "Learning Skills Lab (LSL)",
+    "description": "Преподавание IELTS ученикам.",
+    "startDateTodo": "TODO: дата начала",
+    "studentsTodo": "TODO: число учеников",
+    "resultsTodo": "TODO: результаты"
+  },
+  "method": {
+    "title": "Как преподаю",
+    "step1": "Диагностический тест в первый день — каждый ученик начинает с полного плана по слабым темам.",
+    "step2": "Уроки строятся именно вокруг этих слабых тем.",
+    "step3": "Каждую ошибку ученики могут разобрать на сайте.",
+    "step4": "Регулярные пробные тесты на время.",
+    "step5": "Я отслеживаю прогресс каждого ученика и делюсь им с центром.",
+    "confirmTodo": "TODO: подтвердите шаги"
+  },
+  "tools": {
+    "title": "Инструменты, которые я сделал для учеников",
+    "inDevelopment": "В разработке",
+    "screenshotTodo": "TODO: скриншот",
+    "onlineTodo": "TODO: уже онлайн?",
+    "open": "Открыть →",
+    "diagnosticKicker": "SAT",
+    "diagnosticTitle": "Диагностика SAT Math",
+    "diagnosticDescription": "Находит слабые темы уже на первом уроке.",
+    "mistakesKicker": "SAT · AI",
+    "mistakesTitle": "Анализатор ошибок SAT",
+    "mistakesDescription": "Сфотографируйте задачу с ошибкой — он простыми словами объяснит, почему ответ неверный.",
+    "ieltsKicker": "IELTS · AI",
+    "ieltsTitle": "Анализатор IELTS Reading",
+    "ieltsDescription": "Разбирает ошибки в Reading и их причины."
+  },
+  "projects": {
+    "title": "Другие мои проекты",
+    "uteach": "Платформа для управления учебными центрами.",
+    "super": "Подготовка к поступлению в игровой форме — социальная платформа для школьников.",
+    "uteachName": "uteach",
+    "superName": "SUper"
+  },
+  "leadership": {
+    "title": "Лидерство",
+    "inquirumRole": "Сооснователь",
+    "inquirumDescription": "Первый в Узбекистане республиканский конкурс исследований по экономике и ML для школьников.",
+    "yearTodo": "TODO: год",
+    "participantsTodo": "TODO: число участников",
+    "atlonRole": "Руководитель координаторов",
+    "atlonDescription": "Молодёжная организация, охватывающая несколько регионов.",
+    "sizeTodo": "TODO: число регионов или участников",
+    "inquirumName": "Inquirum",
+    "atlonName": "Atlon Group"
+  },
+  "contact": {
+    "title": "Контакты",
+    "telegram": "Telegram",
+    "phone": "Телефон",
+    "telegramTodo": "@TODO_username",
+    "phoneTodo": "+998 TODO",
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "qrNote": "QR-код, ведущий на эту страницу, — для печати на визитке.",
+    "qrAlt": "QR-код со ссылкой на {url}",
+    "qrTodo": "TODO: адрес сайта"
+  },
+  "footer": {
+    "studentLogin": "Кабинет ученика · скоро",
+    "toDark": "☾ Тёмная тема",
+    "toLight": "☀ Светлая тема"
+  }
+}

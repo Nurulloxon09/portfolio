@@ -1,0 +1,117 @@
+{
+  "_translation": "Machine-translated from uz.json by AI. Please proofread.",
+  "meta": {
+    "title": "Nurulloxon — SAT Math teacher",
+    "description": "SAT Math 750, SAT 1440, IELTS 7.0. SAT Math lessons in Namangan with a day-one diagnostic, a mistake log and tools I built for my students."
+  },
+  "languages": {
+    "label": "Language",
+    "uz": "Oʻzbek",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "nav": {
+    "label": "Main menu",
+    "teach": "What I teach",
+    "method": "How I teach",
+    "tools": "Tools",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Nurulloxon",
+    "location": "Namangan",
+    "title": "SAT Math teacher",
+    "photoTodo": "TODO: photo",
+    "scoreScale": "SAT Math · 200–800",
+    "satMath": "SAT Math",
+    "outOf": "/ {max}",
+    "ielts": "IELTS",
+    "satTotal": "SAT total",
+    "readingWriting": "Reading & Writing {score}",
+    "scoreAxisLabel": "SAT Math score on the 200 to 800 scale: {score}",
+    "contact": "Contact",
+    "tools": "Student tools",
+    "sat": "SAT"
+  },
+  "teach": {
+    "title": "What I teach",
+    "subtitle": "SAT Math — all four official domains",
+    "algebra": "Algebra",
+    "advancedMath": "Advanced Math",
+    "problemSolving": "Problem-Solving & Data Analysis",
+    "geometry": "Geometry & Trigonometry",
+    "group": "Group",
+    "private": "Private",
+    "availabilityTodo": "TODO: days and hours"
+  },
+  "experience": {
+    "title": "Teaching experience",
+    "role": "Founder",
+    "org": "Learning Skills Lab (LSL)",
+    "description": "Teaching IELTS to students.",
+    "startDateTodo": "TODO: start date",
+    "studentsTodo": "TODO: number of students",
+    "resultsTodo": "TODO: results"
+  },
+  "method": {
+    "title": "How I teach",
+    "step1": "A diagnostic test on day one, so every student starts with a full plan for their weak topics.",
+    "step2": "Lessons are built around exactly those weak topics.",
+    "step3": "Students can analyze every mistake on the website.",
+    "step4": "Regular timed mock tests.",
+    "step5": "I track each student’s progress and share it with the center.",
+    "confirmTodo": "TODO: confirm the steps"
+  },
+  "tools": {
+    "title": "Tools I built for my students",
+    "inDevelopment": "In development",
+    "screenshotTodo": "TODO: screenshot",
+    "onlineTodo": "TODO: is it online?",
+    "open": "Open →",
+    "diagnosticKicker": "SAT",
+    "diagnosticTitle": "SAT Math diagnostic",
+    "diagnosticDescription": "Finds weak topics in the very first lesson.",
+    "mistakesKicker": "SAT · AI",
+    "mistakesTitle": "SAT mistake analyzer",
+    "mistakesDescription": "Take a photo of a missed question — it explains in plain words why the answer was wrong.",
+    "ieltsKicker": "IELTS · AI",
+    "ieltsTitle": "IELTS Reading analyzer",
+    "ieltsDescription": "Analyzes Reading mistakes and the reasons behind them."
+  },
+  "projects": {
+    "title": "Other things I’ve built",
+    "uteach": "A platform for running learning centers.",
+    "super": "Gamified college prep — a social platform for high school students.",
+    "uteachName": "uteach",
+    "superName": "SUper"
+  },
+  "leadership": {
+    "title": "Leadership",
+    "inquirumRole": "Co-founder",
+    "inquirumDescription": "Uzbekistan’s first nationwide Economics and ML research competition for high school students.",
+    "yearTodo": "TODO: year",
+    "participantsTodo": "TODO: number of participants",
+    "atlonRole": "Head of Coordinators",
+    "atlonDescription": "A youth organization spanning several regions.",
+    "sizeTodo": "TODO: number of regions or members",
+    "inquirumName": "Inquirum",
+    "atlonName": "Atlon Group"
+  },
+  "contact": {
+    "title": "Contact",
+    "telegram": "Telegram",
+    "phone": "Phone",
+    "telegramTodo": "@TODO_username",
+    "phoneTodo": "+998 TODO",
+    "copy": "Copy",
+    "copied": "Copied",
+    "qrNote": "A QR code that leads to this page — for printing on a business card.",
+    "qrAlt": "QR code linking to {url}",
+    "qrTodo": "TODO: site URL"
+  },
+  "footer": {
+    "studentLogin": "Student login · coming soon",
+    "toDark": "☾ Dark mode",
+    "toLight": "☀ Light mode"
+  }
+}
