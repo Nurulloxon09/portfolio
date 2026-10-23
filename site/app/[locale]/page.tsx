@@ -1,34 +1,35 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Teach } from "@/components/Teach";
-import { Experience } from "@/components/Experience";
-import { Method } from "@/components/Method";
-import { Tools } from "@/components/Tools";
-import { Projects } from "@/components/Projects";
-import { Leadership } from "@/components/Leadership";
-import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
+import { scores } from "@/content/profile";
+import { DeskSceneLoader } from "@/components/scene/DeskSceneLoader";
 
-export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("scene");
+  const hero = await getTranslations("hero");
+  const osUrl = `/${locale}/os`;
 
   return (
-    <div className="graph-paper min-h-screen">
-      <Header locale={locale as Locale} />
-      <main>
-        <Hero />
-        <Teach />
-        <Experience />
-        <Method />
-        <Tools />
-        <Projects />
-        <Leadership />
-        <Contact />
-      </main>
-      <Footer locale={locale as Locale} />
-    </div>
+    <>
+      {/* For keyboards, screen readers and search engines: the same portfolio without 3D */}
+      <a href={osUrl} className="skip-link">
+        {t("skipLink")}
+      </a>
+      <div className="visually-hidden">
+        <h1>
+          {hero("name")} — {hero("title")}
+        </h1>
+        <p>
+          SAT Math {scores.satMath} · SAT {scores.satTotal} · IELTS {scores.ielts} · {hero("location")}
+        </p>
+      </div>
+      <DeskSceneLoader osUrl={osUrl} />
+      <noscript>
+        <p className="noscript">
+          <a href={osUrl}>{t("openDesktop")}</a>
+        </p>
+      </noscript>
+    </>
   );
 }

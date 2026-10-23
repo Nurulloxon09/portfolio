@@ -1,0 +1,258 @@
+/* The 3D desk page: stacked render layers, the loading screen and the overlay.
+   Adapted from henryjeff/portfolio-website (MIT). */
+
+.desk-scene {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+
+.desk-scene p {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.desk-css,
+.desk-webgl,
+.desk-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.desk-css {
+  cursor: pointer;
+}
+
+/* Clicks go through the WebGL canvas to the monitor iframe behind it, unless free camera is on */
+.desk-webgl {
+  pointer-events: none;
+}
+
+.desk-overlay {
+  pointer-events: none;
+}
+
+.desk-ui-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+}
+
+.desk-ui {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desk-videos {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Barely-there CRT wobble on the monitor iframe */
+.jitter {
+  animation: jittery 0.3s ease-in-out infinite forwards;
+}
+
+@keyframes jittery {
+  10% { transform: translate(-0.1px, -0.15px); }
+  20% { transform: translate(0.15px, 0.1px); }
+  30% { transform: translate(-0.2px, -0.25px); }
+  40% { transform: translate(0.05px, 0.1px); }
+  50% { transform: translate(-0.025px, -0.05px); }
+  60% { transform: translate(0px, 0.075px); }
+  70% { transform: translate(-0.075px, -0.1px); }
+  80% { transform: translate(0.075px, 0.125px); }
+  90% { transform: translate(-0.125px, -0.075px); }
+  100% { transform: translate(0.075px, 0.025px); }
+}
+
+/* Loading screen */
+
+.loader {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #000;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.loader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 420px;
+  text-align: center;
+}
+
+.loader-name {
+  font-family: var(--font-display), serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.desk-scene .loader-title {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  margin-top: 24px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 0.2);
+}
+
+.loader-bar-fill {
+  height: 100%;
+  background: #fff;
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.desk-scene .loader-error {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.loader-link {
+  margin-top: 8px;
+  color: #fff;
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
+}
+
+/* "Click anywhere to begin" */
+
+.help-prompt {
+  position: absolute;
+  bottom: 64px;
+  display: flex;
+  align-items: flex-end;
+  padding: 4px 16px;
+  background: #000;
+  text-align: center;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+.help-prompt-hidden {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.help-prompt-cursor {
+  margin-left: 8px;
+  padding: 0 4px 2px 0;
+}
+
+/* Name, title and clock in the corner */
+
+.info-overlay {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  transition:
+    opacity 0.5s ease-out 0.3s,
+    transform 0.5s ease-out 0.3s;
+}
+
+.info-overlay-hidden {
+  opacity: 0;
+  transform: translateX(-32px);
+  pointer-events: none;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+}
+
+.info-box {
+  display: flex;
+  margin-bottom: 4px;
+  padding: 4px 16px;
+  background: #000;
+}
+
+.info-row {
+  display: flex;
+  gap: 4px;
+}
+
+.icon-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26.5px;
+  height: 26.5px;
+  padding: 0;
+  background: #000;
+  border: 0;
+  cursor: pointer;
+  transition:
+    opacity 0.1s ease-out,
+    transform 0.1s ease-out;
+}
+
+.icon-control:hover {
+  opacity: 0.8;
+}
+
+.icon-control:active {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+@media (max-width: 768px) {
+  .desk-scene p {
+    font-size: 10px;
+  }
+
+  .blinking-cursor {
+    width: 0.4em;
+    height: 0.08em;
+  }
+
+  .info-overlay {
+    top: 24px;
+    left: 24px;
+  }
+
+  .icon-control {
+    width: 19.5px;
+    height: 19.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jitter {
+    animation: none;
+  }
+}

@@ -1,5 +1,5 @@
-// Facts shown on the portfolio that are not translated. `null` means the fact
-// is still missing: the page shows a TODO chip instead (see CONTENT_TODO.md).
+// Facts shown on the portfolio that are not translated. `null` hides the fact:
+// fill it in and it appears on the site (see CONTENT_TODO.md).
 
 export const scores = {
   satMath: 750,
@@ -15,8 +15,11 @@ export const contact = {
   phone: null as string | null, // e.g. "+998 90 123 45 67"
 };
 
+// Live links for the Projects page
 export const tools = {
-  ieltsUrl: null as string | null, // link to the live IELTS Reading analyzer, if it is online
+  satMathUrl: "https://advanced-math.ai.studio/",
+  satEnglishUrl: "https://ascentsatprep.web.app/",
+  ieltsUrl: "https://ielts-reading-analyzer-gray.vercel.app/",
 };
 
 export function siteUrl(): string | null {
