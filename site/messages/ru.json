@@ -1,7 +1,7 @@
 {
   "_translation": "Machine-translated from uz.json by AI. Please proofread.",
   "meta": {
-    "title": "Нуруллохон — преподаватель SAT Math",
+    "title": "Нуруллохон — преподаватель SAT",
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. Уроки SAT Math в Намангане: диагностика в первый день, журнал ошибок и инструменты, которые я сделал для учеников."
   },
   "languages": {
@@ -12,7 +12,7 @@
   "hero": {
     "name": "Нуруллохон",
     "location": "Наманган",
-    "title": "Преподаватель SAT Math",
+    "title": "Преподаватель SAT",
     "photoTodo": "TODO: фото",
     "scoreScale": "SAT Math · 200–800",
     "satMath": "SAT Math",

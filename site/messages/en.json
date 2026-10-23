@@ -1,7 +1,7 @@
 {
   "_translation": "Machine-translated from uz.json by AI. Please proofread.",
   "meta": {
-    "title": "Nurulloxon — SAT Math teacher",
+    "title": "Nurulloxon — SAT teacher",
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. SAT Math lessons in Namangan with a day-one diagnostic, a mistake log and tools I built for my students."
   },
   "languages": {
@@ -12,7 +12,7 @@
   "hero": {
     "name": "Nurulloxon",
     "location": "Namangan",
-    "title": "SAT Math teacher",
+    "title": "SAT teacher",
     "photoTodo": "TODO: photo",
     "scoreScale": "SAT Math · 200–800",
     "satMath": "SAT Math",

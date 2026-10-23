@@ -86,7 +86,7 @@ def logo(height, name_size, sub_size, color):
     d = ImageDraw.Draw(layer)
     layer.alpha_composite(badge, (0, (height - badge.height) // 2))
     d.text((x, height * 0.06), "Nurulloxon", font=name_font, fill=color, anchor="lt")
-    d.text((x + name_size * 0.1, height * 0.94), "sat math", font=font(OBLIQUE, sub_size), fill=color, anchor="lb")
+    d.text((x + name_size * 0.1, height * 0.94), "sat teacher", font=font(OBLIQUE, sub_size), fill=color, anchor="lb")
     return layer
 
 
@@ -96,7 +96,7 @@ def label(width, height, base, ink):
     d = ImageDraw.Draw(layer)
     s = height / 145
     d.text((14 * s, 12 * s), "Nurulloxon Showcase 2026", font=font(BOLD_OBLIQUE, int(15 * s)), fill=ink)
-    d.text((14 * s, 30 * s), "sat math", font=font(OBLIQUE, int(10 * s)), fill=ink)
+    d.text((14 * s, 30 * s), "sat teacher", font=font(OBLIQUE, int(10 * s)), fill=ink)
     small = font(SANS, int(8 * s))
     d.text((14 * s, 50 * s), "SAT Math 750  ·  SAT 1440  ·  IELTS 7.0", font=small, fill=ink)
     d.text((14 * s, 62 * s), "Diagnostic on day one. Mistake log. Mock tests.", font=small, fill=ink)
@@ -108,7 +108,7 @@ def label(width, height, base, ink):
     badge = pi_badge(int(26 * s), ink, max(1, int(2 * s)))
     layer.alpha_composite(badge, (int(width - 116 * s), int(80 * s)))
     d.text((width - 86 * s, 82 * s), "Nurulloxon", font=font(BOLD_OBLIQUE, int(12 * s)), fill=ink)
-    d.text((width - 84 * s, 96 * s), "sat math", font=font(OBLIQUE, int(8 * s)), fill=ink)
+    d.text((width - 84 * s, 96 * s), "sat teacher", font=font(OBLIQUE, int(8 * s)), fill=ink)
     # A made-up barcode
     x = width - 118 * s
     while x < width - 14 * s:
@@ -169,7 +169,7 @@ def decor():
         d.text((1592, y), right, font=body, fill=ink, anchor="rm")
 
     center(330, '"Nurulloxon Showcase 2026"', head)
-    center(420, "SAT MATH TEACHER", head)
+    center(420, "SAT TEACHER", head)
     center(510, "Namangan")
 
     center(700, "SCORES", head)

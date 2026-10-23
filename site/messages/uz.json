@@ -1,7 +1,7 @@
 {
   "_translation": "Drafted by AI from the Claude Design mockup (1a) and PLAN.md. Please proofread. Uzbek uses ʻ (U+02BB) in oʻ/gʻ and ʼ (U+02BC) for the tutuq belgisi.",
   "meta": {
-    "title": "Nurulloxon — SAT Matematika oʻqituvchisi",
+    "title": "Nurulloxon — SAT oʻqituvchisi",
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. Namanganda SAT Matematika darslari: diagnostika, xatolar daftari va oʻquvchilar uchun oʻzim yaratgan vositalar."
   },
   "languages": {
@@ -12,7 +12,7 @@
   "hero": {
     "name": "Nurulloxon",
     "location": "Namangan",
-    "title": "SAT Matematika oʻqituvchisi",
+    "title": "SAT oʻqituvchisi",
     "photoTodo": "TODO: rasm",
     "scoreScale": "SAT Math · 200–800",
     "satMath": "SAT Math",
