@@ -140,8 +140,7 @@
   "apps": {
     "showcase": "Моё портфолио",
     "showcaseTitle": "Нуруллохон — Портфолио 2026",
-    "minesweeper": "Сапёр",
-    "credits": "Авторы"
+    "minesweeper": "Сапёр"
   },
   "showcase": {
     "edition": "Портфолио ’26",
@@ -171,19 +170,5 @@
     "won": "Победа!",
     "lost": "Бум! Нажмите на смайлик, чтобы сыграть ещё раз.",
     "hint": "Правая кнопка мыши или долгое нажатие ставит флажок."
-  },
-  "credits": {
-    "title": "АВТОРЫ",
-    "portfolio": "ПОРТФОЛИО",
-    "contentAndTeaching": "Содержание",
-    "scene": "3D-СЦЕНА",
-    "sceneCode": "Код сцены и текстуры",
-    "computerModel": "Модель компьютера",
-    "roomModels": "Модели комнаты",
-    "sounds": "Звуковой дизайн",
-    "inspiration": "ВДОХНОВЕНИЕ",
-    "inspirationWhat": "Оригинал",
-    "license": "3D-сцена адаптирована из проекта portfolio-website Генри Хеффернана (Henry Heffernan) по лицензии MIT.",
-    "thanks": "Спасибо, что заглянули в моё портфолио <3"
   }
 }

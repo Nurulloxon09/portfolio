@@ -9,10 +9,9 @@ import { Taskbar } from "./Taskbar";
 import { Window, type Rect } from "./Window";
 import { Showcase, type QrCode } from "./apps/Showcase";
 import { Minesweeper } from "./apps/Minesweeper";
-import { Credits } from "./apps/Credits";
 import "./os.css";
 
-type AppKey = "showcase" | "minesweeper" | "credits";
+type AppKey = "showcase" | "minesweeper";
 
 type AppDefinition = {
   key: AppKey;
@@ -41,12 +40,6 @@ const APPS: AppDefinition[] = [
     icon: "minesweeper",
     resizable: false,
     rect: (w) => ({ x: Math.max(120, w - 420), y: 80, w: 236, h: 330 }),
-  },
-  {
-    key: "credits",
-    icon: "credits",
-    resizable: true,
-    rect: (w, h) => ({ x: Math.max(110, w / 2 - 260), y: Math.max(40, h / 2 - 330), w: 520, h: Math.min(620, h - 120) }),
   },
 ];
 
@@ -175,7 +168,6 @@ export function Desktop({ qr }: { qr: QrCode | null }) {
           >
             {win.key === "showcase" && <Showcase qr={qr} />}
             {win.key === "minesweeper" && <Minesweeper />}
-            {win.key === "credits" && <Credits />}
           </Window>
         );
       })}

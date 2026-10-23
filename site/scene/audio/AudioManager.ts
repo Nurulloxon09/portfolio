@@ -7,8 +7,6 @@ const DEFAULT_REF_DISTANCE = 10000;
 type PlayOptions = {
   volume?: number;
   randDetuneScale?: number;
-  loop?: boolean;
-  filter?: { type: BiquadFilterType; frequency: number };
   position?: THREE.Vector3;
   refDistance?: number;
   pitch?: number;
@@ -17,14 +15,12 @@ type PlayOptions = {
 export default class AudioManager {
   listener = new THREE.AudioListener();
   computer: ComputerAudio;
-  private ambience: AmbienceAudio;
   private pool = new Map<string, THREE.Audio<AudioNode>>();
   private nextKey = 0;
 
   constructor(private app: Application) {
     app.camera.instance.add(this.listener);
     this.computer = new ComputerAudio(this, app.signal);
-    this.ambience = new AmbienceAudio(this, app);
 
     on("muteToggle", (mute) => this.listener.setMasterVolume(mute ? 0 : 1), app.signal);
   }
@@ -56,14 +52,6 @@ export default class AudioManager {
     }
     audio.setBuffer(buffer);
 
-    if (options.filter) {
-      const filter = audio.context.createBiquadFilter();
-      filter.type = options.filter.type;
-      filter.frequency.setValueAtTime(options.filter.frequency, audio.context.currentTime);
-      audio.setFilter(filter);
-    }
-
-    audio.setLoop(Boolean(options.loop));
     audio.setVolume(options.volume ?? 1);
     audio.play();
 
@@ -82,21 +70,6 @@ export default class AudioManager {
       this.pool.set(key, audio);
     }
     return key;
-  }
-
-  setFilterFrequency(key: string, frequency: number) {
-    const audio = this.pool.get(key);
-    if (!audio) return;
-    const filter = audio.getFilter() as BiquadFilterNode;
-    filter.frequency.setValueAtTime(Math.max(0, Math.min(22050, frequency)), audio.context.currentTime);
-  }
-
-  setVolume(key: string, volume: number) {
-    this.pool.get(key)?.setVolume(volume);
-  }
-
-  update() {
-    this.ambience.update();
   }
 
   destroy() {
@@ -133,42 +106,5 @@ export class ComputerAudio {
 
   keyUp() {
     this.lastKey = "";
-  }
-}
-
-/** Office ambience that gets muffled and quieter as the camera moves in. */
-class AmbienceAudio {
-  private key = "";
-
-  constructor(
-    private manager: AudioManager,
-    private app: Application,
-  ) {
-    on(
-      "loadingScreenDone",
-      () => {
-        this.key = manager.play("office", {
-          volume: 1,
-          loop: true,
-          randDetuneScale: 0,
-          filter: { type: "lowpass", frequency: 1000 },
-        });
-        manager.play("startup", { volume: 0.4, randDetuneScale: 0 });
-      },
-      app.signal,
-    );
-  }
-
-  private map(input: number, inStart: number, inEnd: number, outStart: number, outEnd: number) {
-    return outStart + ((outEnd - outStart) / (inEnd - inStart)) * (input - inStart);
-  }
-
-  update() {
-    if (!this.key) return;
-    const distance = this.app.camera.instance.position.length();
-    const frequency = this.map(distance, 0, 10000, 100, 22000);
-    const volume = Math.min(Math.max(this.map(distance, 1200, 10000, 0, 0.2), 0.05), 0.1);
-    this.manager.setFilterFrequency(this.key, frequency - 3000);
-    this.manager.setVolume(this.key, volume);
   }
 }

@@ -1,6 +1,6 @@
 // Pixel-art icons for the desktop, drawn on a 32×32 grid (16×16 for small ones).
 
-export type IconName = "portfolio" | "minesweeper" | "credits" | "computer" | "start" | "globe" | "speaker";
+export type IconName = "portfolio" | "minesweeper" | "computer" | "start" | "globe" | "speaker";
 
 const OUTLINE = "#000";
 
@@ -29,17 +29,6 @@ function Mine() {
       <path d="M16 4v24M4 16h24M7 7l18 18M25 7L7 25" stroke="#000" strokeWidth="2" />
       <circle cx="16" cy="16" r="8" fill="#000" />
       <rect x="12" y="12" width="3" height="3" fill="#fff" />
-    </>
-  );
-}
-
-function Credits() {
-  return (
-    <>
-      <path d="M7 3h14l5 5v21H7z" fill="#fff" stroke={OUTLINE} strokeWidth="1" />
-      <path d="M21 3v5h5" fill="#c0c0c0" stroke={OUTLINE} strokeWidth="1" />
-      <path d="M10 12h12M10 15h12M10 18h9M10 21h12M10 24h7" stroke="#808080" strokeWidth="1" />
-      <path d="M22 18l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z" fill="#ffd700" stroke={OUTLINE} strokeWidth="1" />
     </>
   );
 }
@@ -88,7 +77,6 @@ function Speaker() {
 const ICONS: Record<IconName, { view: number; draw: () => React.ReactNode }> = {
   portfolio: { view: 32, draw: Portfolio },
   minesweeper: { view: 32, draw: Mine },
-  credits: { view: 32, draw: Credits },
   computer: { view: 32, draw: Computer },
   start: { view: 16, draw: Start },
   globe: { view: 16, draw: Globe },

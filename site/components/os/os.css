@@ -1041,59 +1041,6 @@
   text-align: center;
 }
 
-/* Credits: a typed page */
-
-.credits {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 32px 40px 40px;
-  overflow-y: auto;
-  background: #f4f3ef;
-  color: #555;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 15px;
-  text-align: center;
-  user-select: text;
-}
-
-.credits-title {
-  font-weight: 700;
-}
-
-.credits section {
-  margin-top: 28px;
-}
-
-.credits h2 {
-  margin-bottom: 8px;
-  font-size: 15px;
-}
-
-.credits-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  text-align: left;
-}
-
-.credits-row span:last-child {
-  text-align: right;
-}
-
-.credits a {
-  color: inherit;
-}
-
-.credits-license {
-  margin-top: 36px;
-  font-size: 13px;
-}
-
-.credits-thanks {
-  margin-top: 28px;
-}
-
 /* Shutdown */
 
 .shutdown {

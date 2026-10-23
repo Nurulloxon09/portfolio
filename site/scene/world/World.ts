@@ -25,7 +25,6 @@ export default class World {
   update() {
     this.monitorScreen?.update();
     this.coffeeSteam?.update();
-    this.audio?.update();
   }
 
   destroy() {

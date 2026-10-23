@@ -16,4 +16,4 @@ Adapted from Henry Heffernan's [portfolio-website](https://github.com/henryjeff/
   and replaced with Nurulloxon's own.
 
 The computer model is by Mickael Boitte and the room models by Sean Nicolas (as
-credited in the original project). The OS window "Credits" lists them too.
+credited in the original project).

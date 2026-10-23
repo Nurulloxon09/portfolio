@@ -22,8 +22,6 @@ const sources: Source[] = [
   { name: "keyboardKeydown4", type: "audio", path: `${base}/audio/key_4.mp3` },
   { name: "keyboardKeydown5", type: "audio", path: `${base}/audio/key_5.mp3` },
   { name: "keyboardKeydown6", type: "audio", path: `${base}/audio/key_6.mp3` },
-  { name: "startup", type: "audio", path: `${base}/audio/startup.mp3` },
-  { name: "office", type: "audio", path: `${base}/audio/office.mp3` },
   { name: "ccType", type: "audio", path: `${base}/audio/type.mp3` },
 ];
 

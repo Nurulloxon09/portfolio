@@ -28,6 +28,6 @@ The sheet of paper on the desk and the stickers on the back of the computer show
 
 ## Translations to proofread
 
-- `messages/uz.json`: drafted by AI. Check the wording and the ʻ / ʼ characters, including the new `scene`, `os`, `apps`, `showcase`, `minesweeper` and `credits` sections.
+- `messages/uz.json`: drafted by AI. Check the wording and the ʻ / ʼ characters, including the new `scene`, `os`, `apps`, `showcase` and `minesweeper` sections.
 - `messages/en.json`, `messages/ru.json`: machine-translated from Uzbek, plus the same new sections.
 - Each file has a `_translation` note at the top that says this.

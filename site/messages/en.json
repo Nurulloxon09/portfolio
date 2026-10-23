@@ -140,8 +140,7 @@
   "apps": {
     "showcase": "My Portfolio",
     "showcaseTitle": "Nurulloxon — Portfolio 2026",
-    "minesweeper": "Minesweeper",
-    "credits": "Credits"
+    "minesweeper": "Minesweeper"
   },
   "showcase": {
     "edition": "Portfolio ’26",
@@ -171,19 +170,5 @@
     "won": "You win!",
     "lost": "Boom! Click the face to try again.",
     "hint": "Right-click or long-press to place a flag."
-  },
-  "credits": {
-    "title": "CREDITS",
-    "portfolio": "PORTFOLIO",
-    "contentAndTeaching": "Content",
-    "scene": "3D SCENE",
-    "sceneCode": "Scene code & textures",
-    "computerModel": "Computer model",
-    "roomModels": "Room models",
-    "sounds": "Sound design",
-    "inspiration": "INSPIRATION",
-    "inspirationWhat": "The original",
-    "license": "The 3D scene is adapted from Henry Heffernan’s portfolio-website, used under the MIT license.",
-    "thanks": "Thank you for checking out my portfolio <3"
   }
 }

@@ -140,8 +140,7 @@
   "apps": {
     "showcase": "Mening portfoliom",
     "showcaseTitle": "Nurulloxon — Portfolio 2026",
-    "minesweeper": "Sapyor",
-    "credits": "Mualliflar"
+    "minesweeper": "Sapyor"
   },
   "showcase": {
     "edition": "Portfolio ’26",
@@ -171,19 +170,5 @@
     "won": "Gʻalaba!",
     "lost": "Portladi! Qayta urinish uchun yuzchani bosing.",
     "hint": "Bayroqcha qoʻyish uchun oʻng tugmani bosing yoki uzoq bosib turing."
-  },
-  "credits": {
-    "title": "MUALLIFLAR",
-    "portfolio": "PORTFOLIO",
-    "contentAndTeaching": "Mazmun",
-    "scene": "3D SAHNA",
-    "sceneCode": "Sahna kodi va teksturalar",
-    "computerModel": "Kompyuter modeli",
-    "roomModels": "Xona modellari",
-    "sounds": "Ovoz dizayni",
-    "inspiration": "ILHOM",
-    "inspirationWhat": "Asl nusxa",
-    "license": "3D sahna Henry Heffernanning portfolio-website loyihasidan MIT litsenziyasi asosida moslashtirilgan.",
-    "thanks": "Portfoliomni koʻrganingiz uchun rahmat <3"
   }
 }

@@ -25,7 +25,7 @@ All six pages are prerendered as static pages.
 - `scene/`: the Three.js scene (camera, renderer, monitor, audio). See `scene/README.md`.
 - `components/scene/`: the React overlay on the 3D page (boot screen, prompt, name and clock).
 - `components/os/`: the desktop: windows, taskbar and Start menu, and the apps in `apps/`
-  (My Portfolio, Minesweeper, Credits).
+  (My Portfolio and Minesweeper).
 - `public/scene/`: models, baked textures, sounds and the monitor's static-noise videos.
 - `scripts/retexture.py`: redraws the names and scores baked into the 3D textures.
 - Missing facts: `CONTENT_TODO.md`.
