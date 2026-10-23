@@ -492,6 +492,11 @@
   font-size: 24px;
 }
 
+.showcase h4 {
+  margin-top: 4px;
+  font-size: 19px;
+}
+
 .showcase a {
   color: var(--os-link);
 }
@@ -505,7 +510,7 @@
   flex: none;
   flex-direction: column;
   width: 290px;
-  padding: 48px;
+  padding: 48px 40px;
   overflow-y: auto;
 }
 
@@ -515,9 +520,8 @@
 
 .showcase .showcase-nav-name {
   font-family: var(--font-display), serif;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1;
-  overflow-wrap: anywhere;
 }
 
 .showcase .showcase-nav-edition {

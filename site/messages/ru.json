@@ -2,7 +2,7 @@
   "_translation": "Machine-translated from uz.json by AI. Please proofread.",
   "meta": {
     "title": "Нуруллохон — преподаватель SAT",
-    "description": "SAT Math 750, SAT 1440, IELTS 7.0. Уроки SAT Math в Намангане: диагностика в первый день, журнал ошибок и инструменты, которые я сделал для учеников."
+    "description": "SAT 1440 (Math 750, Reading & Writing 690), IELTS 7.0. Уроки SAT Math и Reading & Writing в Намангане: диагностика в первый день, журнал ошибок и инструменты, которые я сделал для учеников."
   },
   "languages": {
     "uz": "Oʻzbek",
@@ -14,21 +14,28 @@
     "location": "Наманган",
     "title": "Преподаватель SAT",
     "photoTodo": "TODO: фото",
-    "scoreScale": "SAT Math · 200–800",
+    "scoreScale": "шкала 200–800",
     "satMath": "SAT Math",
+    "satReadingWriting": "SAT Reading & Writing",
     "outOf": "/ {max}",
     "ielts": "IELTS",
     "satTotal": "SAT общий",
-    "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "Балл SAT Math на шкале от 200 до 800: {score}"
+    "scoreAxisLabel": "Балл SAT Math на шкале от 200 до 800: {score}",
+    "rwAxisLabel": "Балл SAT Reading and Writing на шкале от 200 до 800: {score}"
   },
   "teach": {
     "title": "Что преподаю",
-    "subtitle": "SAT Math — все четыре официальных раздела",
+    "subtitle": "Обе части SAT — все восемь официальных разделов",
+    "math": "Математика (Math)",
     "algebra": "Алгебра",
     "advancedMath": "Продвинутая математика",
     "problemSolving": "Решение задач и анализ данных",
     "geometry": "Геометрия и тригонометрия",
+    "readingWriting": "Чтение и письмо (Reading and Writing)",
+    "informationIdeas": "Информация и идеи",
+    "craftStructure": "Структура и стиль текста",
+    "expressionIdeas": "Выражение идей",
+    "conventions": "Грамматика и пунктуация английского языка",
     "group": "В группе",
     "private": "Индивидуально",
     "availabilityTodo": "TODO: дни и часы"
@@ -147,7 +154,7 @@
     "stampLabel": "SAT Math {score} из {max}: обо мне",
     "welcome": "Добро пожаловать",
     "intro": "Я {name}!",
-    "introText": "Я преподаю SAT Math в городе {location}. Каждый ученик начинает с диагностического теста в первый день, а уроки строятся именно вокруг тех тем, которые он показал как самые слабые.",
+    "introText": "Я преподаю обе части SAT — Math и Reading & Writing — в городе {location}. Каждый ученик начинает с диагностического теста в первый день, а уроки строятся именно вокруг тех тем, которые он показал как самые слабые.",
     "scoresTitle": "Мои результаты",
     "formats": "Форматы:",
     "schedule": "Расписание:",

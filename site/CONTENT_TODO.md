@@ -20,7 +20,7 @@ Every fact below is missing on purpose. The site shows a red dashed `TODO:` chip
 
 ## Baked into the 3D textures
 
-The sheet of paper on the desk and the stickers on the back of the computer show the scores (SAT Math 750, SAT 1440, R&W 690, IELTS 7.0), the five teaching steps and "Namangan". They are part of the texture images, in English, so they don't change with `profile.ts` or the language. If any of them changes, edit and run `scripts/retexture.py`.
+The sheet of paper on the desk and the stickers on the back of the computer show the scores (SAT 1440, Math 750, R&W 690, IELTS 7.0), the eight SAT domains, the five teaching steps and "Namangan". They are part of the texture images, in English, so they don't change with `profile.ts` or the language. If any of them changes, edit and run `scripts/retexture.py`.
 
 ## Left out until confirmed
 

@@ -92,12 +92,29 @@ function HomePage({ go }: { go: Go }) {
   );
 }
 
+/** One SAT section score with a meter on the 200–800 scale (both sections share it). */
+function SectionScore({ label, score, axisLabel }: { label: string; score: number; axisLabel: string }) {
+  const hero = useTranslations("hero");
+  const meter = (score - scores.satMathMin) / (scores.satMathMax - scores.satMathMin);
+  return (
+    <tr>
+      <th scope="row">{label}</th>
+      <td>
+        <b>{score}</b> {hero("outOf", { max: scores.satMathMax })}
+        <div className="score-meter" role="img" aria-label={axisLabel}>
+          <div className="score-meter-fill" style={{ width: `${meter * 100}%` }} />
+        </div>
+        <span className="score-scale">{hero("scoreScale")}</span>
+      </td>
+    </tr>
+  );
+}
+
 function AboutPage() {
   const t = useTranslations("showcase");
   const hero = useTranslations("hero");
   const teach = useTranslations("teach");
   const method = useTranslations("method");
-  const meter = (scores.satMath - scores.satMathMin) / (scores.satMathMax - scores.satMathMin);
 
   return (
     <article className="showcase-article">
@@ -119,25 +136,21 @@ function AboutPage() {
         <table className="score-table">
           <tbody>
             <tr>
-              <th scope="row">{hero("satMath")}</th>
-              <td>
-                <b>{scores.satMath}</b> {hero("outOf", { max: scores.satMathMax })}
-                <div
-                  className="score-meter"
-                  role="img"
-                  aria-label={hero("scoreAxisLabel", { score: scores.satMath })}
-                >
-                  <div className="score-meter-fill" style={{ width: `${meter * 100}%` }} />
-                </div>
-                <span className="score-scale">{hero("scoreScale")}</span>
-              </td>
-            </tr>
-            <tr>
               <th scope="row">{hero("satTotal")}</th>
               <td>
-                <b>{scores.satTotal}</b> <span className="score-scale">{hero("readingWriting", { score: scores.satReadingWriting })}</span>
+                <b>{scores.satTotal}</b>
               </td>
             </tr>
+            <SectionScore
+              label={hero("satMath")}
+              score={scores.satMath}
+              axisLabel={hero("scoreAxisLabel", { score: scores.satMath })}
+            />
+            <SectionScore
+              label={hero("satReadingWriting")}
+              score={scores.satReadingWriting}
+              axisLabel={hero("rwAxisLabel", { score: scores.satReadingWriting })}
+            />
             <tr>
               <th scope="row">{hero("ielts")}</th>
               <td>
@@ -151,11 +164,19 @@ function AboutPage() {
       <h3>{teach("title")}</h3>
       <div className="text-block">
         <p>{teach("subtitle")}</p>
+        <h4>{teach("math")}</h4>
         <ul>
           <li>{teach("algebra")}</li>
           <li>{teach("advancedMath")}</li>
           <li>{teach("problemSolving")}</li>
           <li>{teach("geometry")}</li>
+        </ul>
+        <h4>{teach("readingWriting")}</h4>
+        <ul>
+          <li>{teach("informationIdeas")}</li>
+          <li>{teach("craftStructure")}</li>
+          <li>{teach("expressionIdeas")}</li>
+          <li>{teach("conventions")}</li>
         </ul>
         <p>
           <b>{t("formats")}</b> {teach("group")} · {teach("private")}

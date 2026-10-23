@@ -2,7 +2,7 @@
   "_translation": "Machine-translated from uz.json by AI. Please proofread.",
   "meta": {
     "title": "Nurulloxon — SAT teacher",
-    "description": "SAT Math 750, SAT 1440, IELTS 7.0. SAT Math lessons in Namangan with a day-one diagnostic, a mistake log and tools I built for my students."
+    "description": "SAT 1440 (Math 750, Reading & Writing 690), IELTS 7.0. SAT Math and Reading & Writing lessons in Namangan with a day-one diagnostic, a mistake log and tools I built for my students."
   },
   "languages": {
     "uz": "Oʻzbek",
@@ -14,21 +14,28 @@
     "location": "Namangan",
     "title": "SAT teacher",
     "photoTodo": "TODO: photo",
-    "scoreScale": "SAT Math · 200–800",
+    "scoreScale": "200–800 scale",
     "satMath": "SAT Math",
+    "satReadingWriting": "SAT Reading & Writing",
     "outOf": "/ {max}",
     "ielts": "IELTS",
     "satTotal": "SAT total",
-    "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "SAT Math score on the 200 to 800 scale: {score}"
+    "scoreAxisLabel": "SAT Math score on the 200 to 800 scale: {score}",
+    "rwAxisLabel": "SAT Reading and Writing score on the 200 to 800 scale: {score}"
   },
   "teach": {
     "title": "What I teach",
-    "subtitle": "SAT Math — all four official domains",
+    "subtitle": "Both sections of the SAT — all eight official domains",
+    "math": "Math",
     "algebra": "Algebra",
     "advancedMath": "Advanced Math",
     "problemSolving": "Problem-Solving & Data Analysis",
     "geometry": "Geometry & Trigonometry",
+    "readingWriting": "Reading and Writing",
+    "informationIdeas": "Information and Ideas",
+    "craftStructure": "Craft and Structure",
+    "expressionIdeas": "Expression of Ideas",
+    "conventions": "Standard English Conventions",
     "group": "Group",
     "private": "Private",
     "availabilityTodo": "TODO: days and hours"
@@ -147,7 +154,7 @@
     "stampLabel": "SAT Math {score} out of {max}: about me",
     "welcome": "Welcome",
     "intro": "I’m {name}!",
-    "introText": "I teach SAT Math in {location}. Every student starts with a diagnostic test on day one, and the lessons are built around exactly the topics it shows are weakest.",
+    "introText": "I teach both sections of the SAT, Math and Reading & Writing, in {location}. Every student starts with a diagnostic test on day one, and the lessons are built around exactly the topics it shows are weakest.",
     "scoresTitle": "My scores",
     "formats": "Formats:",
     "schedule": "Schedule:",

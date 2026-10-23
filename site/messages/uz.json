@@ -2,7 +2,7 @@
   "_translation": "Drafted by AI from the Claude Design mockup (1a) and PLAN.md. Please proofread. Uzbek uses ʻ (U+02BB) in oʻ/gʻ and ʼ (U+02BC) for the tutuq belgisi.",
   "meta": {
     "title": "Nurulloxon — SAT oʻqituvchisi",
-    "description": "SAT Math 750, SAT 1440, IELTS 7.0. Namanganda SAT Matematika darslari: diagnostika, xatolar daftari va oʻquvchilar uchun oʻzim yaratgan vositalar."
+    "description": "SAT 1440 (Math 750, Reading & Writing 690), IELTS 7.0. Namanganda SAT Math va Reading & Writing darslari: diagnostika, xatolar daftari va oʻquvchilar uchun oʻzim yaratgan vositalar."
   },
   "languages": {
     "uz": "Oʻzbek",
@@ -14,21 +14,28 @@
     "location": "Namangan",
     "title": "SAT oʻqituvchisi",
     "photoTodo": "TODO: rasm",
-    "scoreScale": "SAT Math · 200–800",
+    "scoreScale": "200–800 shkalada",
     "satMath": "SAT Math",
+    "satReadingWriting": "SAT Reading & Writing",
     "outOf": "/ {max}",
     "ielts": "IELTS",
     "satTotal": "SAT umumiy",
-    "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "SAT Math ballari 200 dan 800 gacha shkalada: {score}"
+    "scoreAxisLabel": "SAT Math ballari 200 dan 800 gacha shkalada: {score}",
+    "rwAxisLabel": "SAT Reading and Writing ballari 200 dan 800 gacha shkalada: {score}"
   },
   "teach": {
     "title": "Nimani oʻrgataman",
-    "subtitle": "SAT Math — toʻrtta rasmiy yoʻnalish",
+    "subtitle": "SATning ikkala boʻlimi — barcha sakkizta rasmiy yoʻnalish",
+    "math": "Matematika (Math)",
     "algebra": "Algebra",
     "advancedMath": "Advanced Math",
     "problemSolving": "Masala yechish va maʼlumotlar tahlili",
     "geometry": "Geometriya va trigonometriya",
+    "readingWriting": "Oʻqish va yozish (Reading and Writing)",
+    "informationIdeas": "Axborot va gʻoyalar",
+    "craftStructure": "Matn tuzilishi va uslubi",
+    "expressionIdeas": "Fikrni ifodalash",
+    "conventions": "Ingliz tili grammatikasi va tinish belgilari",
     "group": "Guruh",
     "private": "Yakka tartibda",
     "availabilityTodo": "TODO: kunlar va soatlar"
@@ -147,7 +154,7 @@
     "stampLabel": "SAT Math {score} / {max}: men haqimda",
     "welcome": "Xush kelibsiz",
     "intro": "Men {name}man!",
-    "introText": "{location}da SAT Matematikadan dars beraman. Har bir oʻquvchi birinchi kuni diagnostik testdan boshlaydi, darslar esa aynan test koʻrsatgan eng zaif mavzular atrofida quriladi.",
+    "introText": "{location}da SATning ikkala boʻlimidan — Math va Reading & Writingdan dars beraman. Har bir oʻquvchi birinchi kuni diagnostik testdan boshlaydi, darslar esa aynan test koʻrsatgan eng zaif mavzular atrofida quriladi.",
     "scoresTitle": "Natijalarim",
     "formats": "Format:",
     "schedule": "Jadval:",

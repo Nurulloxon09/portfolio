@@ -96,6 +96,7 @@ export function LoadingScreen({
           </div>
           <div className="boot-body">
             <p>SAT-{scores.satMath} Math Coprocessor ............ OK</p>
+            <p>R&amp;W-{scores.satReadingWriting} Reading &amp; Writing Unit ...... OK</p>
             <div className="boot-spacer" />
             <p>IELTS {scores.ielts} Language Module ......... DETECTED</p>
             <p>Checking RAM : {scores.satTotal} KB OK</p>
