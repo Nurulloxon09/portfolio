@@ -220,12 +220,10 @@ function ExperiencePage() {
     <article className="showcase-article">
       <h1>{t("experienceTitle")}</h1>
       <p className="showcase-kicker">{xp("title")}</p>
-      <Entry name={xp("org")} role={xp("role")} aside={<Todo>{xp("startDateTodo")}</Todo>}>
+      <Entry name={xp("org")} role={xp("role")} aside={xp("dates")}>
         <p>{xp("description")}</p>
         <ul>
-          <li>
-            <Todo>{xp("studentsTodo")}</Todo>
-          </li>
+          <li>{xp("students")}</li>
           <li>
             <Todo>{xp("resultsTodo")}</Todo>
           </li>
@@ -236,17 +234,13 @@ function ExperiencePage() {
       <Entry name={lead("inquirumName")} role={lead("inquirumRole")} aside={<Todo>{lead("yearTodo")}</Todo>}>
         <p>{lead("inquirumDescription")}</p>
         <ul>
-          <li>
-            <Todo>{lead("participantsTodo")}</Todo>
-          </li>
+          <li>{lead("inquirumReach")}</li>
         </ul>
       </Entry>
       <Entry name={lead("atlonName")} role={lead("atlonRole")}>
         <p>{lead("atlonDescription")}</p>
         <ul>
-          <li>
-            <Todo>{lead("sizeTodo")}</Todo>
-          </li>
+          <li>{lead("atlonReach")}</li>
         </ul>
       </Entry>
     </article>

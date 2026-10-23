@@ -41,11 +41,11 @@
   },
   "experience": {
     "title": "Oʻqitish tajribasi",
-    "role": "Asoschi",
+    "role": "Oʻqituvchi",
     "org": "Learning Skills Lab (LSL)",
     "description": "Oʻquvchilarga IELTSdan dars berish.",
-    "startDateTodo": "TODO: boshlangan sana",
-    "studentsTodo": "TODO: oʻquvchilar soni",
+    "dates": "2025-yil sentabr – 2026-yil mart",
+    "students": "200+ oʻquvchi",
     "resultsTodo": "TODO: natijalar"
   },
   "method": {
@@ -84,10 +84,10 @@
     "inquirumRole": "Hammuassis",
     "inquirumDescription": "Oʻzbekistondagi birinchi respublika miqyosidagi maktab oʻquvchilari uchun iqtisodiyot va ML tadqiqot musobaqasi.",
     "yearTodo": "TODO: yil",
-    "participantsTodo": "TODO: ishtirokchilar soni",
+    "inquirumReach": "8 ta viloyatdan 500+ ishtirokchi",
     "atlonRole": "Koordinatorlar rahbari",
     "atlonDescription": "Bir nechta viloyatni qamragan yoshlar tashkiloti.",
-    "sizeTodo": "TODO: viloyatlar yoki aʼzolar soni",
+    "atlonReach": "1000+ ishtirokchi",
     "inquirumName": "Inquirum",
     "atlonName": "Atlon Group"
   },

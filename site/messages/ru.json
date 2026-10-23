@@ -41,11 +41,11 @@
   },
   "experience": {
     "title": "Опыт преподавания",
-    "role": "Основатель",
+    "role": "Преподаватель",
     "org": "Learning Skills Lab (LSL)",
     "description": "Преподавание IELTS ученикам.",
-    "startDateTodo": "TODO: дата начала",
-    "studentsTodo": "TODO: число учеников",
+    "dates": "сентябрь 2025 – март 2026",
+    "students": "200+ учеников",
     "resultsTodo": "TODO: результаты"
   },
   "method": {
@@ -84,10 +84,10 @@
     "inquirumRole": "Сооснователь",
     "inquirumDescription": "Первый в Узбекистане республиканский конкурс исследований по экономике и ML для школьников.",
     "yearTodo": "TODO: год",
-    "participantsTodo": "TODO: число участников",
+    "inquirumReach": "500+ участников из 8 регионов",
     "atlonRole": "Руководитель координаторов",
     "atlonDescription": "Молодёжная организация, охватывающая несколько регионов.",
-    "sizeTodo": "TODO: число регионов или участников",
+    "atlonReach": "1000+ участников",
     "inquirumName": "Inquirum",
     "atlonName": "Atlon Group"
   },

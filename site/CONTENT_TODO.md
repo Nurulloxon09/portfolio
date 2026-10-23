@@ -6,9 +6,8 @@ Every fact below is missing on purpose. The site shows a red dashed `TODO:` chip
 
 | Where (My Portfolio window) | What's missing | How to fill it |
 |---|---|---|
-| Experience | Learning Skills Lab: start date, number of students, results | Replace the `experience.*Todo` keys |
-| Experience | Inquirum: year, number of participants | Replace the `leadership.*Todo` keys |
-| Experience | Atlon Group: number of regions or members | Replace `leadership.sizeTodo` |
+| Experience | Learning Skills Lab: results | Replace `experience.resultsTodo` |
+| Experience | Inquirum: year | Replace `leadership.yearTodo` |
 | Projects | Screenshots (only the diagnostic card has a slot right now) | Add images and replace the `tools.screenshotTodo` placeholder |
 | Projects | Is the IELTS Reading analyzer online? If so, its URL | Set `tools.ieltsUrl` in `content/profile.ts`; the TODO chip disappears and an "Open" button appears |
 | Contact | Telegram username | Set `contact.telegram` in `content/profile.ts` |

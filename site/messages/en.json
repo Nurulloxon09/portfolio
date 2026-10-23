@@ -41,11 +41,11 @@
   },
   "experience": {
     "title": "Teaching experience",
-    "role": "Founder",
+    "role": "Teacher",
     "org": "Learning Skills Lab (LSL)",
     "description": "Teaching IELTS to students.",
-    "startDateTodo": "TODO: start date",
-    "studentsTodo": "TODO: number of students",
+    "dates": "Sep 2025 – Mar 2026",
+    "students": "200+ students",
     "resultsTodo": "TODO: results"
   },
   "method": {
@@ -84,10 +84,10 @@
     "inquirumRole": "Co-founder",
     "inquirumDescription": "Uzbekistan’s first nationwide Economics and ML research competition for high school students.",
     "yearTodo": "TODO: year",
-    "participantsTodo": "TODO: number of participants",
+    "inquirumReach": "500+ participants from 8 regions",
     "atlonRole": "Head of Coordinators",
     "atlonDescription": "A youth organization spanning several regions.",
-    "sizeTodo": "TODO: number of regions or members",
+    "atlonReach": "1000+ participants",
     "inquirumName": "Inquirum",
     "atlonName": "Atlon Group"
   },

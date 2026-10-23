@@ -720,6 +720,11 @@
   gap: 8px 16px;
 }
 
+.entry-aside {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
 .showcase .entry-role {
   margin-top: 4px;
   font-size: 20px;
