@@ -23,7 +23,7 @@ export const tools = {
 };
 
 export const projects = {
-  uteachUrl: "https://uteach-black.vercel.app/en/login", // the teacher login
+  uteachUrl: "https://uteach-black.vercel.app/en/demo", // the teacher demo (the login page until it's set up)
 };
 
 export function siteUrl(): string | null {
