@@ -45,8 +45,7 @@
     "org": "Learning Skills Lab (LSL)",
     "description": "Teaching IELTS to students.",
     "dates": "Sep 2025 – Mar 2026",
-    "students": "200+ students",
-    "resultsTodo": "TODO: results"
+    "students": "200+ students"
   },
   "method": {
     "title": "How I teach",
@@ -59,8 +58,6 @@
   "tools": {
     "title": "Tools I built for my students",
     "inDevelopment": "In development",
-    "screenshotTodo": "TODO: screenshot",
-    "onlineTodo": "TODO: is it online?",
     "open": "Open →",
     "diagnosticKicker": "SAT",
     "diagnosticTitle": "SAT Math diagnostic",
@@ -83,7 +80,6 @@
     "title": "Leadership",
     "inquirumRole": "Co-founder",
     "inquirumDescription": "Uzbekistan’s first nationwide Economics and ML research competition for high school students.",
-    "yearTodo": "TODO: year",
     "inquirumReach": "500+ participants from 8 regions",
     "atlonRole": "Head of Coordinators",
     "atlonDescription": "A youth organization spanning several regions.",
@@ -95,13 +91,10 @@
     "title": "Contact",
     "telegram": "Telegram",
     "phone": "Phone",
-    "telegramTodo": "@TODO_username",
-    "phoneTodo": "+998 TODO",
     "copy": "Copy",
     "copied": "Copied",
     "qrNote": "A QR code that leads to this page — for printing on a business card.",
-    "qrAlt": "QR code linking to {url}",
-    "qrTodo": "TODO: site URL"
+    "qrAlt": "QR code linking to {url}"
   },
   "scene": {
     "osTitle": "NurulloxonOS: Nurulloxon’s portfolio desktop",

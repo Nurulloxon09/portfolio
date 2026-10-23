@@ -45,8 +45,7 @@
     "org": "Learning Skills Lab (LSL)",
     "description": "Преподавание IELTS ученикам.",
     "dates": "сентябрь 2025 – март 2026",
-    "students": "200+ учеников",
-    "resultsTodo": "TODO: результаты"
+    "students": "200+ учеников"
   },
   "method": {
     "title": "Как преподаю",
@@ -59,8 +58,6 @@
   "tools": {
     "title": "Инструменты, которые я сделал для учеников",
     "inDevelopment": "В разработке",
-    "screenshotTodo": "TODO: скриншот",
-    "onlineTodo": "TODO: уже онлайн?",
     "open": "Открыть →",
     "diagnosticKicker": "SAT",
     "diagnosticTitle": "Диагностика SAT Math",
@@ -83,7 +80,6 @@
     "title": "Лидерство",
     "inquirumRole": "Сооснователь",
     "inquirumDescription": "Первый в Узбекистане республиканский конкурс исследований по экономике и ML для школьников.",
-    "yearTodo": "TODO: год",
     "inquirumReach": "500+ участников из 8 регионов",
     "atlonRole": "Руководитель координаторов",
     "atlonDescription": "Молодёжная организация, охватывающая несколько регионов.",
@@ -95,13 +91,10 @@
     "title": "Контакты",
     "telegram": "Telegram",
     "phone": "Телефон",
-    "telegramTodo": "@TODO_username",
-    "phoneTodo": "+998 TODO",
     "copy": "Копировать",
     "copied": "Скопировано",
     "qrNote": "QR-код, ведущий на эту страницу, — для печати на визитке.",
-    "qrAlt": "QR-код со ссылкой на {url}",
-    "qrTodo": "TODO: адрес сайта"
+    "qrAlt": "QR-код со ссылкой на {url}"
   },
   "scene": {
     "osTitle": "NurulloxonOS: рабочий стол с портфолио Нуруллохона",

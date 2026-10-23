@@ -1,5 +1,5 @@
-// Facts shown on the portfolio that are not translated. `null` means the fact
-// is still missing: the page shows a TODO chip instead (see CONTENT_TODO.md).
+// Facts shown on the portfolio that are not translated. `null` hides the fact:
+// fill it in and it appears on the site (see CONTENT_TODO.md).
 
 export const scores = {
   satMath: 750,

@@ -74,19 +74,6 @@ button {
   color: #fff;
 }
 
-/* A fact that is still missing (CONTENT_TODO.md) */
-.todo {
-  display: inline-block;
-  padding: 0 6px;
-  border: 1px dashed #c00;
-  color: #c00;
-  background: #fff6f6;
-  font-family: var(--font-pixel), system-ui, sans-serif;
-  font-size: 13px;
-  line-height: 1.6;
-  white-space: normal;
-}
-
 .blinking-cursor {
   display: inline-block;
   width: 0.8em;

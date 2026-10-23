@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { contact, scores, tools } from "@/content/profile";
-import { Todo } from "@/components/Todo";
 import { CopyButton } from "../CopyButton";
 
 export type QrCode = { url: string; svg: string };
@@ -224,14 +223,11 @@ function ExperiencePage() {
         <p>{xp("description")}</p>
         <ul>
           <li>{xp("students")}</li>
-          <li>
-            <Todo>{xp("resultsTodo")}</Todo>
-          </li>
         </ul>
       </Entry>
 
       <p className="showcase-kicker">{lead("title")}</p>
-      <Entry name={lead("inquirumName")} role={lead("inquirumRole")} aside={<Todo>{lead("yearTodo")}</Todo>}>
+      <Entry name={lead("inquirumName")} role={lead("inquirumRole")}>
         <p>{lead("inquirumDescription")}</p>
         <ul>
           <li>{lead("inquirumReach")}</li>
@@ -253,9 +249,9 @@ function ProjectsPage() {
   const projects = useTranslations("projects");
 
   const cards = [
-    { id: "diagnostic", kicker: tt("diagnosticKicker"), title: tt("diagnosticTitle"), description: tt("diagnosticDescription"), screenshot: true },
+    { id: "diagnostic", kicker: tt("diagnosticKicker"), title: tt("diagnosticTitle"), description: tt("diagnosticDescription") },
     { id: "mistakes", kicker: tt("mistakesKicker"), title: tt("mistakesTitle"), description: tt("mistakesDescription") },
-    { id: "ielts", kicker: tt("ieltsKicker"), title: tt("ieltsTitle"), description: tt("ieltsDescription"), url: tools.ieltsUrl, askOnline: true },
+    { id: "ielts", kicker: tt("ieltsKicker"), title: tt("ieltsTitle"), description: tt("ieltsDescription"), url: tools.ieltsUrl },
   ];
 
   return (
@@ -265,8 +261,8 @@ function ProjectsPage() {
       <div className="project-cards">
         {cards.map((card) => (
           <div key={card.id} className="big-button">
-            <div className="big-button-screen" aria-hidden={!card.screenshot}>
-              {card.screenshot ? <Todo>{tt("screenshotTodo")}</Todo> : <span className="big-button-kicker-art">{card.kicker}</span>}
+            <div className="big-button-screen" aria-hidden>
+              <span className="big-button-kicker-art">{card.kicker}</span>
             </div>
             <div className="big-button-body">
               <p className="big-button-kicker">{card.kicker}</p>
@@ -274,12 +270,10 @@ function ProjectsPage() {
               <p>{card.description}</p>
               <p className="big-button-tags">
                 <span className="tag-dev">{tt("inDevelopment")}</span>
-                {card.url ? (
+                {card.url && (
                   <a href={card.url} target="_blank" rel="noreferrer" className="site-button">
                     {tt("open")}
                   </a>
-                ) : (
-                  card.askOnline && <Todo>{tt("onlineTodo")}</Todo>
                 )}
               </p>
             </div>
@@ -302,53 +296,41 @@ function ProjectsPage() {
 
 function ContactPage({ qr }: { qr: QrCode | null }) {
   const t = useTranslations("contact");
-  const rows = [
-    {
-      label: t("telegram"),
-      value: contact.telegram,
-      todo: t("telegramTodo"),
-      href: contact.telegram ? `https://t.me/${contact.telegram.replace(/^@/, "")}` : null,
-    },
-    {
-      label: t("phone"),
-      value: contact.phone,
-      todo: t("phoneTodo"),
-      href: contact.phone ? `tel:${contact.phone.replace(/[^+\d]/g, "")}` : null,
-    },
-  ];
+  // Each row appears once its value is filled in content/profile.ts
+  const rows: { label: string; value: string; href: string }[] = [];
+  if (contact.telegram) {
+    rows.push({ label: t("telegram"), value: contact.telegram, href: `https://t.me/${contact.telegram.replace(/^@/, "")}` });
+  }
+  if (contact.phone) {
+    rows.push({ label: t("phone"), value: contact.phone, href: `tel:${contact.phone.replace(/[^+\d]/g, "")}` });
+  }
 
   return (
     <article className="showcase-article">
       <h1>{t("title")}</h1>
-      <div className="contact-rows">
-        {rows.map((row) => (
-          <div key={row.label} className="contact-row">
-            <div>
-              <p className="contact-label">{row.label}</p>
-              <p className="contact-value">
-                {row.value && row.href ? (
+      {rows.length > 0 && (
+        <div className="contact-rows">
+          {rows.map((row) => (
+            <div key={row.label} className="contact-row">
+              <div>
+                <p className="contact-label">{row.label}</p>
+                <p className="contact-value">
                   <a href={row.href} target={row.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer">
                     {row.value}
                   </a>
-                ) : (
-                  <Todo>{row.todo}</Todo>
-                )}
-              </p>
+                </p>
+              </div>
+              <CopyButton value={row.value} label={t("copy")} copiedLabel={t("copied")} />
             </div>
-            <CopyButton value={row.value} label={t("copy")} copiedLabel={t("copied")} />
-          </div>
-        ))}
-      </div>
-      <div className="contact-qr">
-        {qr ? (
+          ))}
+        </div>
+      )}
+      {qr && (
+        <div className="contact-qr">
           <div className="contact-qr-code" role="img" aria-label={t("qrAlt", { url: qr.url })} dangerouslySetInnerHTML={{ __html: qr.svg }} />
-        ) : (
-          <div className="contact-qr-code contact-qr-missing">
-            <Todo>{t("qrTodo")}</Todo>
-          </div>
-        )}
-        <p>{t("qrNote")}</p>
-      </div>
+          <p>{t("qrNote")}</p>
+        </div>
+      )}
     </article>
   );
 }

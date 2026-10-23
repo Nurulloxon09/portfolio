@@ -45,8 +45,7 @@
     "org": "Learning Skills Lab (LSL)",
     "description": "Oʻquvchilarga IELTSdan dars berish.",
     "dates": "2025-yil sentabr – 2026-yil mart",
-    "students": "200+ oʻquvchi",
-    "resultsTodo": "TODO: natijalar"
+    "students": "200+ oʻquvchi"
   },
   "method": {
     "title": "Qanday oʻrgataman",
@@ -59,8 +58,6 @@
   "tools": {
     "title": "Oʻquvchilarim uchun yaratgan vositalarim",
     "inDevelopment": "Ishlab chiqilmoqda",
-    "screenshotTodo": "TODO: skrinshot",
-    "onlineTodo": "TODO: onlaynmi?",
     "open": "Ochish →",
     "diagnosticKicker": "SAT",
     "diagnosticTitle": "SAT Math diagnostikasi",
@@ -83,7 +80,6 @@
     "title": "Yetakchilik",
     "inquirumRole": "Hammuassis",
     "inquirumDescription": "Oʻzbekistondagi birinchi respublika miqyosidagi maktab oʻquvchilari uchun iqtisodiyot va ML tadqiqot musobaqasi.",
-    "yearTodo": "TODO: yil",
     "inquirumReach": "8 ta viloyatdan 500+ ishtirokchi",
     "atlonRole": "Koordinatorlar rahbari",
     "atlonDescription": "Bir nechta viloyatni qamragan yoshlar tashkiloti.",
@@ -95,13 +91,10 @@
     "title": "Aloqa",
     "telegram": "Telegram",
     "phone": "Telefon",
-    "telegramTodo": "@TODO_username",
-    "phoneTodo": "+998 TODO",
     "copy": "Nusxa olish",
     "copied": "Nusxa olindi",
     "qrNote": "Shu sahifaga olib boruvchi QR — vizitkaga chop etish uchun.",
-    "qrAlt": "{url} manziliga olib boruvchi QR kod",
-    "qrTodo": "TODO: sayt manzili"
+    "qrAlt": "{url} manziliga olib boruvchi QR kod"
   },
   "scene": {
     "osTitle": "NurulloxonOS: Nurulloxonning portfolio ish stoli",

@@ -28,7 +28,7 @@ All six pages are prerendered as static pages.
   (My Portfolio and Minesweeper).
 - `public/scene/`: models, baked textures, sounds and the monitor's static-noise videos.
 - `scripts/retexture.py`: redraws the names and scores baked into the 3D textures.
-- Missing facts: `CONTENT_TODO.md`.
+- Facts that can still be added, and translation notes: `CONTENT_TODO.md`.
 
 ## Credits and license
 

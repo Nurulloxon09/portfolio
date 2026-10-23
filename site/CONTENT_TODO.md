@@ -1,18 +1,17 @@
-# Content TODO
+# Content notes
 
-Every fact below is missing on purpose. The site shows a red dashed `TODO:` chip where each one goes. Text lives in `messages/{uz,en,ru}.json`; untranslated facts live in `content/profile.ts`.
+There are no TODO chips on the site any more. Untranslated facts live in `content/profile.ts` and text in `messages/{uz,en,ru}.json`.
 
-## Facts to fill in
+## Facts that appear once you add them
 
-| Where (My Portfolio window) | What's missing | How to fill it |
+| What | Where it shows | How to add it |
 |---|---|---|
-| Experience | Learning Skills Lab: results | Replace `experience.resultsTodo` |
-| Experience | Inquirum: year | Replace `leadership.yearTodo` |
-| Projects | Screenshots (only the diagnostic card has a slot right now) | Add images and replace the `tools.screenshotTodo` placeholder |
-| Projects | Is the IELTS Reading analyzer online? If so, its URL | Set `tools.ieltsUrl` in `content/profile.ts`; the TODO chip disappears and an "Open" button appears |
-| Contact | Telegram username | Set `contact.telegram` in `content/profile.ts` |
-| Contact | Phone number | Set `contact.phone` in `content/profile.ts` |
-| Contact | Site URL for the QR code | Automatic on Vercel (production domain); otherwise set `NEXT_PUBLIC_SITE_URL` |
+| Telegram username | Contact page, with a Copy button | Set `contact.telegram` in `content/profile.ts` |
+| Phone number | Contact page, with a Copy button | Set `contact.phone` in `content/profile.ts` |
+| IELTS Reading analyzer link | Projects page, as an "Open" button | Set `tools.ieltsUrl` in `content/profile.ts` |
+| Site URL for the QR code | Contact page | Automatic on Vercel (production domain); otherwise set `NEXT_PUBLIC_SITE_URL` |
+
+Until Telegram or the phone number is set, the Contact page only shows the QR code.
 
 ## Baked into the 3D textures
 
