@@ -125,9 +125,7 @@ function AboutPage() {
       </div>
 
       <figure className="captioned-image">
-        <div className="photo-frame">
-          <Todo>{hero("photoTodo")}</Todo>
-        </div>
+        <img className="photo-frame" src="/photo.jpg" alt={hero("photoAlt")} width={600} height={800} />
         <figcaption>{hero("location")}</figcaption>
       </figure>
 

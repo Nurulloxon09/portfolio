@@ -688,13 +688,16 @@
   font-style: italic;
 }
 
+/* A sunken frame, like a picture in a Windows 95 viewer */
 .photo-frame {
-  display: grid;
-  place-items: center;
-  width: min(100%, 420px);
-  aspect-ratio: 4 / 3;
-  background: repeating-conic-gradient(#eee 0 25%, #f8f8f8 0 50%) 0 0 / 16px 16px;
-  box-shadow: var(--os-field);
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: var(--os-surface);
+  border: 2px solid;
+  border-color: var(--os-shadow) var(--os-light) var(--os-light) var(--os-shadow);
 }
 
 .score-table {
