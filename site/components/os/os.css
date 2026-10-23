@@ -606,38 +606,6 @@
   margin-top: 56px;
 }
 
-/* A rubber stamp with the headline score, like a "for hire" sticker */
-.score-stamp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 56px;
-  padding: 10px 22px 8px;
-  background: #e8423a;
-  border: 3px double #fff;
-  outline: 3px solid #e8423a;
-  color: #fff;
-  font-family: var(--font-display), serif;
-  line-height: 1;
-  rotate: -6deg;
-  cursor: pointer;
-  transition: rotate 0.15s ease-out;
-}
-
-.score-stamp:hover {
-  rotate: -2deg;
-}
-
-.score-stamp span {
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.score-stamp strong {
-  font-size: 44px;
-  font-weight: 400;
-}
-
 .showcase-article {
   display: flex;
   flex-direction: column;

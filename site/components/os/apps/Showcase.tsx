@@ -72,7 +72,6 @@ function Navbar({ current, go }: { current: Page; go: Go }) {
 }
 
 function HomePage({ go }: { go: Go }) {
-  const t = useTranslations("showcase");
   const hero = useTranslations("hero");
   return (
     <div className="showcase-home">
@@ -83,11 +82,6 @@ function HomePage({ go }: { go: Go }) {
           <PageLink key={page} page={page} go={go} />
         ))}
       </div>
-      <button type="button" className="score-stamp" onClick={() => go("about")} aria-label={t("stampLabel", { score: scores.satMath, max: scores.satMathMax })}>
-        <span>SAT MATH</span>
-        <strong>{scores.satMath}</strong>
-        <span>/ {scores.satMathMax}</span>
-      </button>
     </div>
   );
 }
