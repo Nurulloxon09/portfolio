@@ -1,6 +1,6 @@
 // Pixel-art icons for the desktop, drawn on a 32×32 grid (16×16 for small ones).
 
-export type IconName = "portfolio" | "minesweeper" | "computer" | "start" | "globe" | "speaker";
+export type IconName = "portfolio" | "minesweeper" | "uteach" | "computer" | "start" | "globe" | "speaker";
 
 const OUTLINE = "#000";
 
@@ -29,6 +29,19 @@ function Mine() {
       <path d="M16 4v24M4 16h24M7 7l18 18M25 7L7 25" stroke="#000" strokeWidth="2" />
       <circle cx="16" cy="16" r="8" fill="#000" />
       <rect x="12" y="12" width="3" height="3" fill="#fff" />
+    </>
+  );
+}
+
+function Uteach() {
+  return (
+    <>
+      {/* uteach's violet badge with a mortarboard */}
+      <rect x="2" y="2" width="28" height="28" rx="6" fill="#7a2ee3" stroke={OUTLINE} strokeWidth="1" />
+      <path d="M5 13l11-6 11 6-11 6z" fill="#fff" />
+      <path d="M10 16v6c3 3 9 3 12 0v-6l-6 3z" fill="#e4d4fb" />
+      <path d="M25 13v7" stroke="#fff" strokeWidth="2" />
+      <rect x="24" y="20" width="3" height="3" fill="#ffd34e" />
     </>
   );
 }
@@ -77,6 +90,7 @@ function Speaker() {
 const ICONS: Record<IconName, { view: number; draw: () => React.ReactNode }> = {
   portfolio: { view: 32, draw: Portfolio },
   minesweeper: { view: 32, draw: Mine },
+  uteach: { view: 32, draw: Uteach },
   computer: { view: 32, draw: Computer },
   start: { view: 16, draw: Start },
   globe: { view: 16, draw: Globe },

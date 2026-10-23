@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { contact, projects as projectLinks, scores, tools } from "@/content/profile";
+import { contact, scores, tools } from "@/content/profile";
 import { CopyButton } from "../CopyButton";
 
 export type QrCode = { url: string; svg: string };
@@ -27,7 +27,7 @@ function PageLink({ page, current, go }: { page: Page; current?: Page; go: Go })
 }
 
 /** The portfolio itself: a little website inside a window. */
-export function Showcase({ qr }: { qr: QrCode | null }) {
+export function Showcase({ qr, openUteach }: { qr: QrCode | null; openUteach: () => void }) {
   const [page, setPage] = useState<Page>("home");
   const scroller = useRef<HTMLDivElement>(null);
 
@@ -44,7 +44,7 @@ export function Showcase({ qr }: { qr: QrCode | null }) {
           {page === "home" && <HomePage go={setPage} />}
           {page === "about" && <AboutPage />}
           {page === "experience" && <ExperiencePage />}
-          {page === "projects" && <ProjectsPage />}
+          {page === "projects" && <ProjectsPage openUteach={openUteach} />}
           {page === "contact" && <ContactPage qr={qr} />}
         </div>
       </div>
@@ -243,9 +243,14 @@ function ExperiencePage() {
   );
 }
 
-type ProjectCardProps = { kicker: string; title: string; description: string; url: string; action: string };
+type ProjectCardProps = {
+  kicker: string;
+  title: string;
+  description: string;
+  action: string;
+} & ({ url: string; onOpen?: never } | { onOpen: () => void; url?: never });
 
-function ProjectCard({ kicker, title, description, url, action }: ProjectCardProps) {
+function ProjectCard({ kicker, title, description, url, onOpen, action }: ProjectCardProps) {
   return (
     <div className="big-button">
       <div className="big-button-screen" aria-hidden>
@@ -256,16 +261,22 @@ function ProjectCard({ kicker, title, description, url, action }: ProjectCardPro
         <h2>{title}</h2>
         <p>{description}</p>
         <p className="big-button-tags">
-          <a href={url} target="_blank" rel="noreferrer" className="site-button">
-            {action}
-          </a>
+          {url ? (
+            <a href={url} target="_blank" rel="noreferrer" className="site-button">
+              {action}
+            </a>
+          ) : (
+            <button type="button" className="site-button" onClick={onOpen}>
+              {action}
+            </button>
+          )}
         </p>
       </div>
     </div>
   );
 }
 
-function ProjectsPage() {
+function ProjectsPage({ openUteach }: { openUteach: () => void }) {
   const t = useTranslations("showcase");
   const tt = useTranslations("tools");
   const projects = useTranslations("projects");
@@ -292,7 +303,7 @@ function ProjectsPage() {
           kicker={projects("uteachKicker")}
           title={projects("uteachName")}
           description={projects("uteach")}
-          url={projectLinks.uteachUrl}
+          onOpen={openUteach}
           action={projects("uteachLink")}
         />
       </div>

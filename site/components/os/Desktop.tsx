@@ -9,9 +9,10 @@ import { Taskbar } from "./Taskbar";
 import { Window, type Rect } from "./Window";
 import { Showcase, type QrCode } from "./apps/Showcase";
 import { Minesweeper } from "./apps/Minesweeper";
+import { Uteach } from "./apps/Uteach";
 import "./os.css";
 
-type AppKey = "showcase" | "minesweeper";
+type AppKey = "showcase" | "uteach" | "minesweeper";
 
 type AppDefinition = {
   key: AppKey;
@@ -36,6 +37,12 @@ const APPS: AppDefinition[] = [
     defaultClassName: "window-showcase-default",
   },
   {
+    key: "uteach",
+    icon: "uteach",
+    resizable: true,
+    rect: (w, h) => ({ x: 140, y: 40, w: Math.min(w - 180, 1040), h: h - TASKBAR_HEIGHT - 72 }),
+  },
+  {
     key: "minesweeper",
     icon: "minesweeper",
     resizable: false,
@@ -57,7 +64,8 @@ export function Desktop({ qr }: { qr: QrCode | null }) {
   const [poweredOn, setPoweredOn] = useState(true);
   const lastPointer = useRef("mouse");
 
-  const title = (key: AppKey) => (key === "showcase" ? t("showcaseTitle") : t(key));
+  const title = (key: AppKey) =>
+    key === "showcase" ? t("showcaseTitle") : key === "uteach" ? t("uteachTitle") : t(key);
 
   const open = useCallback((key: AppKey) => {
     setWindows((prev) => {
@@ -166,7 +174,8 @@ export function Desktop({ qr }: { qr: QrCode | null }) {
             onMinimize={() => minimize(win.key)}
             onClose={() => close(win.key)}
           >
-            {win.key === "showcase" && <Showcase qr={qr} />}
+            {win.key === "showcase" && <Showcase qr={qr} openUteach={() => open("uteach")} />}
+            {win.key === "uteach" && <Uteach />}
             {win.key === "minesweeper" && <Minesweeper />}
           </Window>
         );

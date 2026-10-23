@@ -74,7 +74,7 @@
     "super": "Подготовка к поступлению в игровой форме — социальная платформа для школьников.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Демо для учителя →",
+    "uteachLink": "Открыть демо →",
     "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
@@ -126,6 +126,8 @@
   "apps": {
     "showcase": "Моё портфолио",
     "showcaseTitle": "Нуруллохон — Портфолио 2026",
+    "uteach": "uteach демо",
+    "uteachTitle": "uteach — демо для учителя",
     "minesweeper": "Сапёр"
   },
   "showcase": {
@@ -154,5 +156,44 @@
     "won": "Победа!",
     "lost": "Бум! Нажмите на смайлик, чтобы сыграть ещё раз.",
     "hint": "Правая кнопка мыши или долгое нажатие ставит флажок."
+  },
+  "uteach": {
+    "tabAttendance": "Посещаемость",
+    "tabAcademy": "Академия",
+    "demo": "Демо",
+    "demoNote": "Демо uteach с выдуманными учениками. Изменения остаются в этом окне.",
+    "teacher": "Преподаватель",
+    "today": "Сегодня",
+    "room": "Кабинет {number}",
+    "chipMarked": "Отмечено {marked}/{total}",
+    "chipToMark": "Отметить",
+    "chipNotMarked": "Не отмечено",
+    "attendance": "Посещаемость",
+    "topic": "Тема",
+    "topicPlaceholder": "Что прошли на занятии?",
+    "allPresent": "Остальные пришли",
+    "present": "Присутствует",
+    "late": "Опоздание",
+    "absent": "Отсутствует",
+    "excused": "Уважительная",
+    "lateMinutes": "Минут опоздания",
+    "minutesShort": "мин",
+    "counter": "Отмечено {marked} из {total}",
+    "save": "Сохранить",
+    "saved": "Сохранено",
+    "savedToast": "Посещаемость сохранена",
+    "myGroups": "Мои группы",
+    "prep": "Подготовка к {course}",
+    "students": "{count, plural, one {# ученик} few {# ученика} many {# учеников} other {# ученика}}",
+    "attendanceRate": "Посещаемость за месяц: {rate}%",
+    "scores": "Баллы",
+    "student": "Ученик",
+    "latest": "Последний",
+    "before": "Предыдущий",
+    "target": "Цель",
+    "gap": "До цели",
+    "examDate": "Дата экзамена",
+    "mock": "Пробный",
+    "reached": "Достигнута"
   }
 }

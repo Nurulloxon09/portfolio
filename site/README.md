@@ -25,7 +25,8 @@ All six pages are prerendered as static pages.
 - `scene/`: the Three.js scene (camera, renderer, monitor, audio). See `scene/README.md`.
 - `components/scene/`: the React overlay on the 3D page (loading screen, prompt, name and clock).
 - `components/os/`: the desktop: windows, taskbar and Start menu, and the apps in `apps/`
-  (My Portfolio and Minesweeper).
+  (My Portfolio, the uteach teacher demo and Minesweeper). The uteach demo is show-only: made-up
+  students in `apps/uteach-data.ts`, and marks stay in the window.
 - `public/scene/`: models, baked textures, sounds and the monitor's static-noise videos.
 - `scripts/retexture.py`: redraws the names and scores baked into the 3D textures.
 - Facts that can still be added, and translation notes: `CONTENT_TODO.md`.

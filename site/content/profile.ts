@@ -22,10 +22,6 @@ export const tools = {
   ieltsUrl: "https://ielts-reading-analyzer-gray.vercel.app/",
 };
 
-export const projects = {
-  uteachUrl: "https://uteach-black.vercel.app/en/demo", // the teacher demo (the login page until it's set up)
-};
-
 export function siteUrl(): string | null {
   if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {

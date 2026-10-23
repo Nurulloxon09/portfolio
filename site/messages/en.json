@@ -74,7 +74,7 @@
     "super": "Gamified college prep — a social platform for high school students.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Teacher demo →",
+    "uteachLink": "Open the demo →",
     "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
@@ -126,6 +126,8 @@
   "apps": {
     "showcase": "My Portfolio",
     "showcaseTitle": "Nurulloxon — Portfolio 2026",
+    "uteach": "uteach demo",
+    "uteachTitle": "uteach — teacher demo",
     "minesweeper": "Minesweeper"
   },
   "showcase": {
@@ -154,5 +156,44 @@
     "won": "You win!",
     "lost": "Boom! Click the face to try again.",
     "hint": "Right-click or long-press to place a flag."
+  },
+  "uteach": {
+    "tabAttendance": "Attendance",
+    "tabAcademy": "Academy",
+    "demo": "Demo",
+    "demoNote": "A demo of uteach with made-up students. Changes stay in this window.",
+    "teacher": "Teacher",
+    "today": "Today",
+    "room": "Room {number}",
+    "chipMarked": "{marked}/{total} marked",
+    "chipToMark": "To mark",
+    "chipNotMarked": "Not marked",
+    "attendance": "Attendance",
+    "topic": "Topic",
+    "topicPlaceholder": "What did you cover?",
+    "allPresent": "Mark the rest present",
+    "present": "Present",
+    "late": "Late",
+    "absent": "Absent",
+    "excused": "Excused",
+    "lateMinutes": "Minutes late",
+    "minutesShort": "min",
+    "counter": "{marked} of {total} marked",
+    "save": "Save",
+    "saved": "Saved",
+    "savedToast": "Attendance saved",
+    "myGroups": "My groups",
+    "prep": "{course} prep",
+    "students": "{count, plural, one {# student} other {# students}}",
+    "attendanceRate": "Attendance this month: {rate}%",
+    "scores": "Scores",
+    "student": "Student",
+    "latest": "Latest",
+    "before": "Before",
+    "target": "Target",
+    "gap": "Gap",
+    "examDate": "Exam date",
+    "mock": "Mock",
+    "reached": "Reached"
   }
 }

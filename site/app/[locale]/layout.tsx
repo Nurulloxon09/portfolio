@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Pixelify_Sans, Tinos, Yeseva_One } from "next/font/google";
+import { Manrope, Pixelify_Sans, Plus_Jakarta_Sans, Tinos, Yeseva_One } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -30,6 +30,22 @@ const display = Yeseva_One({
   weight: "400",
   variable: "--font-display",
   display: "swap",
+});
+
+// The uteach demo window uses uteach's own fonts. Not preloaded: they download only when that window opens.
+// Manrope covers Cyrillic, which Plus Jakarta Sans doesn't.
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-jakarta",
+  display: "swap",
+  preload: false,
+});
+
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  variable: "--font-manrope",
+  display: "swap",
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -70,7 +86,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${pixel.variable} ${serif.variable} ${display.variable}`}>
+    <html lang={locale} className={`${pixel.variable} ${serif.variable} ${display.variable} ${jakarta.variable} ${manrope.variable}`}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

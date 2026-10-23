@@ -74,7 +74,7 @@
     "super": "Maktab oʻquvchilari uchun oliygohga tayyorlov — oʻyin uslubidagi ijtimoiy platforma.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Oʻqituvchi demosi →",
+    "uteachLink": "Demoni ochish →",
     "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
@@ -126,6 +126,8 @@
   "apps": {
     "showcase": "Mening portfoliom",
     "showcaseTitle": "Nurulloxon — Portfolio 2026",
+    "uteach": "uteach demo",
+    "uteachTitle": "uteach — oʻqituvchi demosi",
     "minesweeper": "Sapyor"
   },
   "showcase": {
@@ -154,5 +156,44 @@
     "won": "Gʻalaba!",
     "lost": "Portladi! Qayta urinish uchun yuzchani bosing.",
     "hint": "Bayroqcha qoʻyish uchun oʻng tugmani bosing yoki uzoq bosib turing."
+  },
+  "uteach": {
+    "tabAttendance": "Davomat",
+    "tabAcademy": "Akademiya",
+    "demo": "Demo",
+    "demoNote": "Oʻylab topilgan oʻquvchilar bilan uteach demosi. Oʻzgarishlar shu oynada qoladi.",
+    "teacher": "Oʻqituvchi",
+    "today": "Bugun",
+    "room": "{number}-xona",
+    "chipMarked": "{marked}/{total} belgilandi",
+    "chipToMark": "Belgilash kerak",
+    "chipNotMarked": "Belgilanmagan",
+    "attendance": "Davomat",
+    "topic": "Mavzu",
+    "topicPlaceholder": "Darsda nima oʻtildi?",
+    "allPresent": "Qolganlari keldi",
+    "present": "Keldi",
+    "late": "Kechikdi",
+    "absent": "Kelmadi",
+    "excused": "Sababli",
+    "lateMinutes": "Necha daqiqa kechikdi",
+    "minutesShort": "daq",
+    "counter": "{total} tadan {marked} tasi belgilandi",
+    "save": "Saqlash",
+    "saved": "Saqlandi",
+    "savedToast": "Davomat saqlandi",
+    "myGroups": "Mening guruhlarim",
+    "prep": "{course} tayyorlov",
+    "students": "{count} ta oʻquvchi",
+    "attendanceRate": "Shu oydagi davomat: {rate}%",
+    "scores": "Ballar",
+    "student": "Oʻquvchi",
+    "latest": "Oxirgi",
+    "before": "Avvalgi",
+    "target": "Maqsad",
+    "gap": "Maqsadgacha",
+    "examDate": "Imtihon sanasi",
+    "mock": "Sinov",
+    "reached": "Erishildi"
   }
 }
