@@ -37,8 +37,7 @@
     "expressionIdeas": "Fikrni ifodalash",
     "conventions": "Ingliz tili grammatikasi va tinish belgilari",
     "group": "Guruh",
-    "private": "Yakka tartibda",
-    "availabilityTodo": "TODO: kunlar va soatlar"
+    "private": "Yakka tartibda"
   },
   "experience": {
     "title": "Oʻqitish tajribasi",
@@ -55,8 +54,7 @@
     "step2": "Darslar aynan shu zaif mavzular atrofida quriladi.",
     "step3": "Har bir xatoni analiz qilish websitedan foydalana oladi.",
     "step4": "Muntazam, vaqt bilan oʻtkaziladigan mock testlar.",
-    "step5": "Har bir oʻquvchining oʻsishini kuzatib, markaz bilan ulashaman.",
-    "confirmTodo": "TODO: qadamlarni tasdiqlang"
+    "step5": "Har bir oʻquvchining oʻsishini kuzatib, markaz bilan ulashaman."
   },
   "tools": {
     "title": "Oʻquvchilarim uchun yaratgan vositalarim",
@@ -155,7 +153,6 @@
     "introText": "{location}da SATning ikkala boʻlimidan — Math va Reading & Writingdan dars beraman. Har bir oʻquvchi birinchi kuni diagnostik testdan boshlaydi, darslar esa aynan test koʻrsatgan eng zaif mavzular atrofida quriladi.",
     "scoresTitle": "Natijalarim",
     "formats": "Format:",
-    "schedule": "Jadval:",
     "experienceTitle": "Tajriba",
     "projectsTitle": "Loyihalar"
   },

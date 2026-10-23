@@ -37,8 +37,7 @@
     "expressionIdeas": "Expression of Ideas",
     "conventions": "Standard English Conventions",
     "group": "Group",
-    "private": "Private",
-    "availabilityTodo": "TODO: days and hours"
+    "private": "Private"
   },
   "experience": {
     "title": "Teaching experience",
@@ -55,8 +54,7 @@
     "step2": "Lessons are built around exactly those weak topics.",
     "step3": "Students can analyze every mistake on the website.",
     "step4": "Regular timed mock tests.",
-    "step5": "I track each student’s progress and share it with the center.",
-    "confirmTodo": "TODO: confirm the steps"
+    "step5": "I track each student’s progress and share it with the center."
   },
   "tools": {
     "title": "Tools I built for my students",
@@ -155,7 +153,6 @@
     "introText": "I teach both sections of the SAT, Math and Reading & Writing, in {location}. Every student starts with a diagnostic test on day one, and the lessons are built around exactly the topics it shows are weakest.",
     "scoresTitle": "My scores",
     "formats": "Formats:",
-    "schedule": "Schedule:",
     "experienceTitle": "Experience",
     "projectsTitle": "Projects"
   },

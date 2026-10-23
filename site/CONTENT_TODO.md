@@ -6,8 +6,6 @@ Every fact below is missing on purpose. The site shows a red dashed `TODO:` chip
 
 | Where (My Portfolio window) | What's missing | How to fill it |
 |---|---|---|
-| About | Days and hours available | Replace `teach.availabilityTodo` in all three message files |
-| About | Confirm or edit the five teaching steps (step 3 was edited in the mockup and may need rewording) | Edit `method.step1`–`step5`, then remove `method.confirmTodo` |
 | Experience | Learning Skills Lab: start date, number of students, results | Replace the `experience.*Todo` keys |
 | Experience | Inquirum: year, number of participants | Replace the `leadership.*Todo` keys |
 | Experience | Atlon Group: number of regions or members | Replace `leadership.sizeTodo` |

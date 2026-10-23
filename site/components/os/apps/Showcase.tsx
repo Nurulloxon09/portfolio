@@ -173,9 +173,6 @@ function AboutPage() {
         <p>
           <b>{t("formats")}</b> {teach("group")} · {teach("private")}
         </p>
-        <p>
-          <b>{t("schedule")}</b> <Todo>{teach("availabilityTodo")}</Todo>
-        </p>
       </div>
 
       <h3>{method("title")}</h3>
@@ -187,9 +184,6 @@ function AboutPage() {
           <li>{method("step4")}</li>
           <li>{method("step5")}</li>
         </ol>
-        <p>
-          <Todo>{method("confirmTodo")}</Todo>
-        </p>
       </div>
     </article>
   );
