@@ -57,14 +57,13 @@
   },
   "tools": {
     "title": "Инструменты, которые я сделал для учеников",
-    "inDevelopment": "В разработке",
     "open": "Открыть →",
-    "diagnosticKicker": "SAT",
-    "diagnosticTitle": "Диагностика SAT Math",
-    "diagnosticDescription": "Находит слабые темы уже на первом уроке.",
-    "mistakesKicker": "SAT · AI",
-    "mistakesTitle": "Анализатор ошибок SAT",
-    "mistakesDescription": "Сфотографируйте задачу с ошибкой — он простыми словами объяснит, почему ответ неверный.",
+    "mathKicker": "SAT · Math",
+    "mathTitle": "SAT Math",
+    "mathDescription": "Подготовка к разделу SAT Math.",
+    "englishKicker": "SAT · English",
+    "englishTitle": "Ascent SAT Prep",
+    "englishDescription": "Подготовка к разделу SAT Reading and Writing.",
     "ieltsKicker": "IELTS · AI",
     "ieltsTitle": "Анализатор IELTS Reading",
     "ieltsDescription": "Разбирает ошибки в Reading и их причины."
@@ -74,7 +73,8 @@
     "uteach": "Платформа для управления учебными центрами.",
     "super": "Подготовка к поступлению в игровой форме — социальная платформа для школьников.",
     "uteachName": "uteach",
-    "superName": "SUper"
+    "superName": "SUper",
+    "uteachLink": "Вход для учителя →"
   },
   "leadership": {
     "title": "Лидерство",

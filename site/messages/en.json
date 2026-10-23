@@ -57,14 +57,13 @@
   },
   "tools": {
     "title": "Tools I built for my students",
-    "inDevelopment": "In development",
     "open": "Open →",
-    "diagnosticKicker": "SAT",
-    "diagnosticTitle": "SAT Math diagnostic",
-    "diagnosticDescription": "Finds weak topics in the very first lesson.",
-    "mistakesKicker": "SAT · AI",
-    "mistakesTitle": "SAT mistake analyzer",
-    "mistakesDescription": "Take a photo of a missed question — it explains in plain words why the answer was wrong.",
+    "mathKicker": "SAT · Math",
+    "mathTitle": "SAT Math",
+    "mathDescription": "Preparation for the SAT Math section.",
+    "englishKicker": "SAT · English",
+    "englishTitle": "Ascent SAT Prep",
+    "englishDescription": "Preparation for the SAT Reading and Writing section.",
     "ieltsKicker": "IELTS · AI",
     "ieltsTitle": "IELTS Reading analyzer",
     "ieltsDescription": "Analyzes Reading mistakes and the reasons behind them."
@@ -74,7 +73,8 @@
     "uteach": "A platform for running learning centers.",
     "super": "Gamified college prep — a social platform for high school students.",
     "uteachName": "uteach",
-    "superName": "SUper"
+    "superName": "SUper",
+    "uteachLink": "Teacher login →"
   },
   "leadership": {
     "title": "Leadership",

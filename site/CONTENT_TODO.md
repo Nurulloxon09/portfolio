@@ -8,7 +8,6 @@ There are no TODO chips on the site any more. Untranslated facts live in `conten
 |---|---|---|
 | Telegram username | Contact page, with a Copy button | Set `contact.telegram` in `content/profile.ts` |
 | Phone number | Contact page, with a Copy button | Set `contact.phone` in `content/profile.ts` |
-| IELTS Reading analyzer link | Projects page, as an "Open" button | Set `tools.ieltsUrl` in `content/profile.ts` |
 | Site URL for the QR code | Contact page | Automatic on Vercel (production domain); otherwise set `NEXT_PUBLIC_SITE_URL` |
 
 Until Telegram or the phone number is set, the Contact page only shows the QR code.

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { contact, scores, tools } from "@/content/profile";
+import { contact, projects as projectLinks, scores, tools } from "@/content/profile";
 import { CopyButton } from "../CopyButton";
 
 export type QrCode = { url: string; svg: string };
@@ -249,8 +249,8 @@ function ProjectsPage() {
   const projects = useTranslations("projects");
 
   const cards = [
-    { id: "diagnostic", kicker: tt("diagnosticKicker"), title: tt("diagnosticTitle"), description: tt("diagnosticDescription") },
-    { id: "mistakes", kicker: tt("mistakesKicker"), title: tt("mistakesTitle"), description: tt("mistakesDescription") },
+    { id: "math", kicker: tt("mathKicker"), title: tt("mathTitle"), description: tt("mathDescription"), url: tools.satMathUrl },
+    { id: "english", kicker: tt("englishKicker"), title: tt("englishTitle"), description: tt("englishDescription"), url: tools.satEnglishUrl },
     { id: "ielts", kicker: tt("ieltsKicker"), title: tt("ieltsTitle"), description: tt("ieltsDescription"), url: tools.ieltsUrl },
   ];
 
@@ -269,12 +269,9 @@ function ProjectsPage() {
               <h2>{card.title}</h2>
               <p>{card.description}</p>
               <p className="big-button-tags">
-                <span className="tag-dev">{tt("inDevelopment")}</span>
-                {card.url && (
-                  <a href={card.url} target="_blank" rel="noreferrer" className="site-button">
-                    {tt("open")}
-                  </a>
-                )}
+                <a href={card.url} target="_blank" rel="noreferrer" className="site-button">
+                  {tt("open")}
+                </a>
               </p>
             </div>
           </div>
@@ -284,7 +281,10 @@ function ProjectsPage() {
       <h3>{projects("title")}</h3>
       <div className="text-block">
         <p>
-          <b>{projects("uteachName")}</b> — {projects("uteach")}
+          <b>{projects("uteachName")}</b> — {projects("uteach")}{" "}
+          <a href={projectLinks.uteachUrl} target="_blank" rel="noreferrer">
+            {projects("uteachLink")}
+          </a>
         </p>
         <p>
           <b>{projects("superName")}</b> — {projects("super")}

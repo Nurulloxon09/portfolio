@@ -57,14 +57,13 @@
   },
   "tools": {
     "title": "Oʻquvchilarim uchun yaratgan vositalarim",
-    "inDevelopment": "Ishlab chiqilmoqda",
     "open": "Ochish →",
-    "diagnosticKicker": "SAT",
-    "diagnosticTitle": "SAT Math diagnostikasi",
-    "diagnosticDescription": "Birinchi darsdayoq zaif mavzularni aniqlaydi.",
-    "mistakesKicker": "SAT · AI",
-    "mistakesTitle": "SAT xatolar tahlilchisi",
-    "mistakesDescription": "Xato savolni rasmga oling — nega xato boʻlganini oddiy tilda tushuntiradi.",
+    "mathKicker": "SAT · Math",
+    "mathTitle": "SAT Math",
+    "mathDescription": "SAT Math boʻlimiga tayyorgarlik.",
+    "englishKicker": "SAT · English",
+    "englishTitle": "Ascent SAT Prep",
+    "englishDescription": "SAT Reading and Writing boʻlimiga tayyorgarlik.",
     "ieltsKicker": "IELTS · AI",
     "ieltsTitle": "IELTS Reading tahlilchisi",
     "ieltsDescription": "Reading xatolarini sababi bilan tahlil qiladi."
@@ -74,7 +73,8 @@
     "uteach": "Oʻquv markazlarini boshqarish platformasi.",
     "super": "Maktab oʻquvchilari uchun oliygohga tayyorlov — oʻyin uslubidagi ijtimoiy platforma.",
     "uteachName": "uteach",
-    "superName": "SUper"
+    "superName": "SUper",
+    "uteachLink": "Oʻqituvchi sifatida kirish →"
   },
   "leadership": {
     "title": "Yetakchilik",

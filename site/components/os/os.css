@@ -441,6 +441,12 @@
   cursor: pointer;
 }
 
+/* Link buttons keep button colors, not the page's link colors */
+.showcase a.site-button,
+.showcase a.site-button:visited {
+  color: #000;
+}
+
 .site-button:hover {
   background: var(--os-surface);
 }
@@ -762,7 +768,8 @@
 .big-button-kicker-art {
   color: #3effc8;
   font-family: monospace;
-  font-size: 22px;
+  font-size: 20px;
+  white-space: nowrap;
   text-shadow: 0 0 6px #3effc8;
 }
 
@@ -789,14 +796,6 @@
   align-items: center;
   gap: 8px;
   margin-top: 4px !important;
-}
-
-.tag-dev {
-  padding: 1px 8px;
-  background: #ffffc8;
-  border: 1px solid #b8a400;
-  font-family: var(--font-pixel), system-ui, sans-serif;
-  font-size: 13px;
 }
 
 .contact-rows {
