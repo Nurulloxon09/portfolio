@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Cormorant_Garamond, Lora } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Pixelify_Sans, Tinos, Yeseva_One } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -7,27 +7,38 @@ import { routing } from "@/i18n/routing";
 import { siteUrl } from "@/content/profile";
 import "../globals.css";
 
-const cormorant = Cormorant_Garamond({
+// Window chrome, taskbar and icons
+const pixel = Pixelify_Sans({
   subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["400", "600"],
-  variable: "--font-cormorant",
+  variable: "--font-pixel",
   display: "swap",
 });
 
-const lora = Lora({
+// Body text inside the portfolio window, a Times New Roman look-alike
+const serif = Tinos({
   subsets: ["latin", "latin-ext", "cyrillic"],
-  weight: ["400", "600"],
+  weight: ["400", "700"],
   style: ["normal", "italic"],
-  variable: "--font-lora",
+  variable: "--font-serif",
   display: "swap",
 });
 
-// Sets data-theme before first paint so the page never flashes the wrong theme.
-const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t}catch(e){}})()`;
+// Big headings
+const display = Yeseva_One({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: "400",
+  variable: "--font-display",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
 
 export async function generateMetadata({
   params,
@@ -59,10 +70,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${lora.variable}`} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang={locale} className={`${pixel.variable} ${serif.variable} ${display.variable}`}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

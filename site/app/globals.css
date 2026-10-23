@@ -1,275 +1,135 @@
-@import "tailwindcss";
+/* Base styles shared by the 3D scene (/[locale]) and the desktop (/[locale]/os).
+   Page-specific styles live next to their components:
+   components/scene/scene.css and components/os/os.css. */
 
-/* Classical design system (project/_ds/classical-…/styles.css), adapted:
-   - fonts come from next/font (see app/[locale]/layout.tsx), not a Google @import
-   - base and component rules sit in cascade layers so Tailwind utilities can override them
-   - a dark theme, taken from mockup 1b, redefines the tokens */
-
-:root {
-  --color-bg: #f3f2f2;
-  --color-surface: #eae9e9;
-  --color-text: #201f1d;
-  --color-accent: #b68235;
-  --color-divider: color-mix(in srgb, #201f1d 16%, transparent);
-
-  --color-neutral-100: #f8f4f4;
-  --color-neutral-200: #eae7e7;
-  --color-neutral-300: #d7d3d3;
-  --color-neutral-400: #bab6b6;
-  --color-neutral-500: #9b9797;
-  --color-neutral-600: #7d7979;
-  --color-neutral-700: #605d5d;
-  --color-neutral-800: #444141;
-  --color-neutral-900: #2d2b2b;
-
-  --color-accent-100: #fff3e4;
-  --color-accent-200: #ffe3bf;
-  --color-accent-300: #facb8d;
-  --color-accent-400: #e1ad66;
-  --color-accent-500: #c28d41;
-  --color-accent-600: #a06f24;
-  --color-accent-700: #7d5411;
-  --color-accent-800: #5a3b0a;
-  --color-accent-900: #3a270d;
-
-  /* Roles used by this site's components; the dark theme swaps them. */
-  --color-kicker: var(--color-accent-700);
-  --color-accent-hover: var(--color-accent-600);
-  --color-rule-strong: var(--color-text);
-  --color-placeholder-bg: var(--color-neutral-200);
-  --color-placeholder-fg: var(--color-neutral-700);
-  --color-todo-border: var(--color-accent-600);
-  --color-todo-fg: var(--color-accent-800);
-  --color-tag-neutral-bg: var(--color-neutral-100);
-  --color-tag-neutral-fg: var(--color-neutral-800);
-  --color-tag-accent-bg: var(--color-accent-100);
-  --color-tag-accent-fg: var(--color-accent-800);
-  --color-grid-line: color-mix(in srgb, var(--color-text) 5%, transparent);
-
-  --font-heading: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
-  --font-heading-weight: 600;
-  --font-body: var(--font-lora), "Lora", Georgia, serif;
-
-  --space-1: 4.6px;
-  --space-2: 9.2px;
-  --space-3: 13.8px;
-  --space-4: 18.4px;
-  --space-6: 27.6px;
-  --space-8: 36.8px;
-
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 7px;
-
-  --shadow-sm: 0 1px 2px color-mix(in srgb, #2d2b2b 14%, transparent);
-  --shadow-md: 0 3px 10px color-mix(in srgb, #2d2b2b 16%, transparent);
-  --shadow-lg: 0 12px 32px color-mix(in srgb, #2d2b2b 22%, transparent);
-
-  color-scheme: light;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Dark tokens: the inline script in the layout always sets data-theme, so the
-   media query only covers visitors without JavaScript. */
-:root[data-theme="dark"] {
-  --color-bg: #1b1a18;
-  --color-surface: #2d2b2b;
-  --color-text: #f3f2f2;
-  --color-accent: #e1ad66;
-  --color-divider: rgba(243, 242, 242, 0.15);
-  --color-kicker: var(--color-accent-400);
-  --color-accent-hover: var(--color-accent-300);
-  --color-rule-strong: rgba(243, 242, 242, 0.8);
-  --color-placeholder-bg: #2d2b2b;
-  --color-placeholder-fg: var(--color-neutral-400);
-  --color-todo-border: var(--color-accent-400);
-  --color-todo-fg: var(--color-accent-300);
-  --color-tag-neutral-bg: #2d2b2b;
-  --color-tag-neutral-fg: var(--color-neutral-300);
-  --color-tag-accent-bg: var(--color-accent-900);
-  --color-tag-accent-fg: var(--color-accent-200);
-  --color-grid-line: rgba(243, 242, 242, 0.05);
-  --shadow-sm: 0 0 0 1px rgba(243, 242, 242, 0.08);
-  color-scheme: dark;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --color-bg: #1b1a18;
-    --color-surface: #2d2b2b;
-    --color-text: #f3f2f2;
-    --color-accent: #e1ad66;
-    --color-divider: rgba(243, 242, 242, 0.15);
-    --color-kicker: var(--color-accent-400);
-    --color-accent-hover: var(--color-accent-300);
-    --color-rule-strong: rgba(243, 242, 242, 0.8);
-    --color-placeholder-bg: #2d2b2b;
-    --color-placeholder-fg: var(--color-neutral-400);
-    --color-todo-border: var(--color-accent-400);
-    --color-todo-fg: var(--color-accent-300);
-    --color-tag-neutral-bg: #2d2b2b;
-    --color-tag-neutral-fg: var(--color-neutral-300);
-    --color-tag-accent-bg: var(--color-accent-900);
-    --color-tag-accent-fg: var(--color-accent-200);
-    --color-grid-line: rgba(243, 242, 242, 0.05);
-    color-scheme: dark;
+
+body {
+  font-family: var(--font-pixel), system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Visible only when focused from the keyboard */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  z-index: 1000;
+  translate: -50% -200%;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  translate: -50% 0;
+}
+
+.noscript {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: monospace;
+}
+
+.noscript a {
+  color: #fff;
+}
+
+/* A fact that is still missing (CONTENT_TODO.md) */
+.todo {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px dashed #c00;
+  color: #c00;
+  background: #fff6f6;
+  font-family: var(--font-pixel), system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.15em;
+  background-color: #fff;
+  animation: blink 0.65s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fff;
   }
 }
 
-@layer base {
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--color-bg);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-size: 15px;
-    line-height: 1.55;
-    font-weight: 400;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-    line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
-  }
-  h1 { font-size: 42px; }
-  h2 { font-size: 32px; }
-  h3 { font-size: 25px; }
-  h4 { font-size: 20px; }
-  p { margin: 0 0 var(--space-3); }
-  a { color: var(--color-accent); text-underline-offset: 3px; }
-  a:hover { color: var(--color-accent-hover); }
-  :focus { outline: none; }
-  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-  ::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+/* Animated "..." after loading text */
+.loading::after {
+  display: inline-block;
+  content: "";
+  animation: dotty 1s steps(1, end) infinite;
 }
 
-@layer components {
-  /* — buttons — */
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-    cursor: pointer; text-decoration: none;
-    font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-    font-size: 14px; line-height: 1.2; color: var(--color-text);
-    background: transparent; border: 1px solid transparent;
-    padding: var(--space-2) calc(var(--space-3) * 1.2);
-    border-radius: var(--radius-md);
+@keyframes dotty {
+  0% {
+    content: "\00a0\00a0\00a0";
   }
-  .btn:hover { color: var(--color-text); }
-  /* Buttons that sit on the graph paper get the page ground behind them. */
-  .on-ground { background: var(--color-bg); }
-  .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
-  .btn-primary, .btn-primary:hover { color: var(--color-accent); border-color: var(--color-accent); }
-  .btn-primary:hover { background: color-mix(in srgb, var(--color-accent) 12%, transparent); }
-  .btn-primary:active { background: color-mix(in srgb, var(--color-accent) 22%, transparent); }
-  .btn-secondary { border-color: var(--color-divider); }
-  .btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
-  .btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
-  .btn-ghost, .btn-ghost:hover { color: var(--color-accent); padding-inline: var(--space-1); }
-  .btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
-  .btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
-  .btn[aria-disabled="true"]:hover { background: transparent; }
-
-  /* — segmented control (used as the language switcher, so options are links) — */
-  .seg {
-    display: inline-flex; overflow: hidden;
-    border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+  25% {
+    content: ".\00a0\00a0";
   }
-  .seg-opt {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 7px 12px; font-size: 13px; cursor: pointer;
-    color: var(--color-text); text-decoration: none;
+  50% {
+    content: "..\00a0";
   }
-  .seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
-  .seg-opt[aria-current="true"], .seg-opt[aria-current="true"]:hover {
-    color: var(--color-accent); box-shadow: inset 0 0 0 1px var(--color-accent);
+  75% {
+    content: "...";
   }
-  .seg-opt:not([aria-current="true"]):hover {
-    color: var(--color-text); background: color-mix(in srgb, var(--color-text) 7%, transparent);
-  }
-  .seg-opt:focus-visible { outline-offset: -2px; }
-
-  /* — cards — */
-  .card {
-    display: flex; flex-direction: column; gap: var(--space-2);
-    padding: var(--space-3); border-radius: var(--radius-md);
-    background: var(--color-bg); border: 1px solid var(--color-divider);
-  }
-  .card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-kicker); }
-  .card-title {
-    font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-    font-size: 17px; line-height: 1.2;
-  }
-  .card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
-  .card-meta {
-    display: flex; align-items: center; gap: 6px; font-size: 11px;
-    color: color-mix(in srgb, var(--color-text) 50%, transparent);
-  }
-
-  /* — tags — */
-  .tag {
-    display: inline-flex; align-items: center; font-size: 11px;
-    letter-spacing: 0.02em; padding: 3px 10px;
-    border-radius: calc(var(--radius-md) * 0.75);
-  }
-  .tag-accent { background: var(--color-tag-accent-bg); color: var(--color-tag-accent-fg); }
-  .tag-neutral { background: var(--color-tag-neutral-bg); color: var(--color-tag-neutral-fg); }
-  .tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
-  .tag-todo { border: 1px dashed var(--color-todo-border); color: var(--color-todo-fg); }
-
-  /* — navigation — */
-  .nav {
-    display: flex; align-items: center; gap: var(--space-4);
-    border-bottom: 1px solid var(--color-divider);
-  }
-  .nav-brand {
-    font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-    margin-right: auto;
-  }
-  .nav a { color: inherit; text-decoration: none; font-size: 14px; }
-  .nav a:hover, .nav a[aria-current] { color: var(--color-accent); }
-
-  /* — site-specific pieces from the mockup — */
-  .graph-paper {
-    background-color: var(--color-bg);
-    background-image:
-      linear-gradient(var(--color-grid-line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
-    background-size: 22px 22px;
-  }
-  @media (min-width: 1024px) { .graph-paper { background-size: 24px 24px; } }
-  .section-band {
-    border-top: 1px solid var(--color-divider);
-    background: color-mix(in srgb, var(--color-bg) 85%, transparent);
-  }
-  .kicker {
-    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-kicker);
-  }
-  .mat {
-    border: 6px solid var(--color-surface); outline: 1px solid var(--color-divider);
-    background: var(--color-placeholder-bg); color: var(--color-placeholder-fg);
-  }
-  .tnum { font-feature-settings: "tnum"; }
-
-  /* Theme toggle shows the label for the theme it switches to. */
-  .theme-label-light { display: none; }
-  :root[data-theme="dark"] .theme-label-dark { display: none; }
-  :root[data-theme="dark"] .theme-label-light { display: inline; }
 }
 
-@layer components {
-  .font-heading { font-family: var(--font-heading); }
-  .container-x { margin-inline: auto; max-width: 1200px; padding-inline: 20px; }
-  @media (min-width: 1024px) { .container-x { padding-inline: 48px; } }
-
-  /* Hero: on phones the scores sit between the name and the buttons (1a);
-     on desktop they move to a right-hand card (1c). */
-  .hero-grid { display: grid; grid-template-areas: "id" "scores" "cta"; }
-  .hero-grid > .area-id { grid-area: id; }
-  .hero-grid > .area-scores { grid-area: scores; }
-  .hero-grid > .area-cta { grid-area: cta; }
-  @media (min-width: 1024px) {
-    .hero-grid {
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      grid-template-areas: "id scores" "cta scores";
-      column-gap: 56px; align-items: end;
-    }
+@media (prefers-reduced-motion: reduce) {
+  .blinking-cursor,
+  .loading::after {
+    animation: none;
   }
 }

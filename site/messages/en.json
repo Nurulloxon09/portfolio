@@ -5,17 +5,9 @@
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. SAT Math lessons in Namangan with a day-one diagnostic, a mistake log and tools I built for my students."
   },
   "languages": {
-    "label": "Language",
     "uz": "Oʻzbek",
     "en": "English",
     "ru": "Русский"
-  },
-  "nav": {
-    "label": "Main menu",
-    "teach": "What I teach",
-    "method": "How I teach",
-    "tools": "Tools",
-    "contact": "Contact"
   },
   "hero": {
     "name": "Nurulloxon",
@@ -28,10 +20,7 @@
     "ielts": "IELTS",
     "satTotal": "SAT total",
     "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "SAT Math score on the 200 to 800 scale: {score}",
-    "contact": "Contact",
-    "tools": "Student tools",
-    "sat": "SAT"
+    "scoreAxisLabel": "SAT Math score on the 200 to 800 scale: {score}"
   },
   "teach": {
     "title": "What I teach",
@@ -109,9 +98,85 @@
     "qrAlt": "QR code linking to {url}",
     "qrTodo": "TODO: site URL"
   },
-  "footer": {
-    "studentLogin": "Student login · coming soon",
-    "toDark": "☾ Dark mode",
-    "toLight": "☀ Light mode"
+  "scene": {
+    "osTitle": "NurulloxonOS: Nurulloxon’s portfolio desktop",
+    "skipLink": "Skip the 3D scene and open the portfolio",
+    "startTitle": "Nurulloxon Portfolio Showcase 2026",
+    "mobileWarning": "WARNING: This experience is best viewed on a desktop or laptop computer.",
+    "clickStart": "Click start to begin",
+    "start": "START",
+    "allLoaded": "All content loaded, launching <b>‘Nurulloxon Portfolio Showcase’</b> V1.0",
+    "webglErrorTitle": "CRITICAL ERROR:",
+    "webglErrorBody": "No WebGL detected",
+    "webglRequired": "The 3D scene needs WebGL. Turn it on or switch to a browser that supports it.",
+    "openDesktop": "Open the portfolio without 3D →",
+    "help": "Click anywhere to begin",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "freeCamOn": "Free camera",
+    "freeCamOff": "Back to the desk"
+  },
+  "os": {
+    "name": "NurulloxonOS",
+    "start": "Start",
+    "language": "Language",
+    "shutDown": "Shut down…",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close",
+    "shuttingDown": "NurulloxonOS is shutting down",
+    "safeToTurnOff": "It’s now safe to turn off your computer.",
+    "restart": "Click anywhere to start it again",
+    "starting": "Starting NurulloxonOS"
+  },
+  "apps": {
+    "showcase": "My Portfolio",
+    "showcaseTitle": "Nurulloxon — Portfolio 2026",
+    "minesweeper": "Minesweeper",
+    "credits": "Credits"
+  },
+  "showcase": {
+    "edition": "Portfolio ’26",
+    "home": "HOME",
+    "about": "ABOUT",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS",
+    "contact": "CONTACT",
+    "copyright": "© 2026 Nurulloxon",
+    "stampLabel": "SAT Math {score} out of {max}: about me",
+    "welcome": "Welcome",
+    "intro": "I’m {name}!",
+    "introText": "I teach SAT Math in {location}. Every student starts with a diagnostic test on day one, and the lessons are built around exactly the topics it shows are weakest.",
+    "scoresTitle": "My scores",
+    "formats": "Formats:",
+    "schedule": "Schedule:",
+    "experienceTitle": "Experience",
+    "projectsTitle": "Projects"
+  },
+  "minesweeper": {
+    "minesLeft": "Mines left",
+    "time": "Time",
+    "newGame": "New game",
+    "flag": "Flag",
+    "mine": "Mine",
+    "hidden": "Hidden square",
+    "won": "You win!",
+    "lost": "Boom! Click the face to try again.",
+    "hint": "Right-click or long-press to place a flag."
+  },
+  "credits": {
+    "title": "CREDITS",
+    "portfolio": "PORTFOLIO",
+    "contentAndTeaching": "Content",
+    "scene": "3D SCENE",
+    "sceneCode": "Scene code & textures",
+    "computerModel": "Computer model",
+    "roomModels": "Room models",
+    "sounds": "Sound design",
+    "inspiration": "INSPIRATION",
+    "inspirationWhat": "The original",
+    "license": "The 3D scene is adapted from Henry Heffernan’s portfolio-website, used under the MIT license.",
+    "thanks": "Thank you for checking out my portfolio <3"
   }
 }

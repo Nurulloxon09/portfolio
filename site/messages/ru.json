@@ -5,17 +5,9 @@
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. Уроки SAT Math в Намангане: диагностика в первый день, журнал ошибок и инструменты, которые я сделал для учеников."
   },
   "languages": {
-    "label": "Язык",
     "uz": "Oʻzbek",
     "en": "English",
     "ru": "Русский"
-  },
-  "nav": {
-    "label": "Главное меню",
-    "teach": "Что преподаю",
-    "method": "Как преподаю",
-    "tools": "Инструменты",
-    "contact": "Контакты"
   },
   "hero": {
     "name": "Нуруллохон",
@@ -28,10 +20,7 @@
     "ielts": "IELTS",
     "satTotal": "SAT общий",
     "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "Балл SAT Math на шкале от 200 до 800: {score}",
-    "contact": "Связаться",
-    "tools": "Инструменты",
-    "sat": "SAT"
+    "scoreAxisLabel": "Балл SAT Math на шкале от 200 до 800: {score}"
   },
   "teach": {
     "title": "Что преподаю",
@@ -109,9 +98,85 @@
     "qrAlt": "QR-код со ссылкой на {url}",
     "qrTodo": "TODO: адрес сайта"
   },
-  "footer": {
-    "studentLogin": "Кабинет ученика · скоро",
-    "toDark": "☾ Тёмная тема",
-    "toLight": "☀ Светлая тема"
+  "scene": {
+    "osTitle": "NurulloxonOS: рабочий стол с портфолио Нуруллохона",
+    "skipLink": "Пропустить 3D-сцену и открыть портфолио",
+    "startTitle": "Nurulloxon Portfolio Showcase 2026",
+    "mobileWarning": "ВНИМАНИЕ: эту страницу лучше смотреть на компьютере или ноутбуке.",
+    "clickStart": "Нажмите START, чтобы начать",
+    "start": "START",
+    "allLoaded": "Всё загружено, запускается <b>‘Nurulloxon Portfolio Showcase’</b> V1.0",
+    "webglErrorTitle": "КРИТИЧЕСКАЯ ОШИБКА:",
+    "webglErrorBody": "WebGL не найден",
+    "webglRequired": "Для 3D-сцены нужен WebGL. Включите его или откройте сайт в браузере, который его поддерживает.",
+    "openDesktop": "Открыть портфолио без 3D →",
+    "help": "Нажмите в любом месте, чтобы начать",
+    "mute": "Выключить звук",
+    "unmute": "Включить звук",
+    "freeCamOn": "Свободная камера",
+    "freeCamOff": "Вернуться к столу"
+  },
+  "os": {
+    "name": "NurulloxonOS",
+    "start": "Пуск",
+    "language": "Язык",
+    "shutDown": "Завершение работы…",
+    "minimize": "Свернуть",
+    "maximize": "Развернуть",
+    "restore": "Восстановить",
+    "close": "Закрыть",
+    "shuttingDown": "NurulloxonOS завершает работу",
+    "safeToTurnOff": "Теперь питание компьютера можно отключить.",
+    "restart": "Нажмите в любом месте, чтобы включить снова",
+    "starting": "Запуск NurulloxonOS"
+  },
+  "apps": {
+    "showcase": "Моё портфолио",
+    "showcaseTitle": "Нуруллохон — Портфолио 2026",
+    "minesweeper": "Сапёр",
+    "credits": "Авторы"
+  },
+  "showcase": {
+    "edition": "Портфолио ’26",
+    "home": "ГЛАВНАЯ",
+    "about": "ОБО МНЕ",
+    "experience": "ОПЫТ",
+    "projects": "ПРОЕКТЫ",
+    "contact": "КОНТАКТЫ",
+    "copyright": "© 2026 Нуруллохон",
+    "stampLabel": "SAT Math {score} из {max}: обо мне",
+    "welcome": "Добро пожаловать",
+    "intro": "Я {name}!",
+    "introText": "Я преподаю SAT Math в городе {location}. Каждый ученик начинает с диагностического теста в первый день, а уроки строятся именно вокруг тех тем, которые он показал как самые слабые.",
+    "scoresTitle": "Мои результаты",
+    "formats": "Форматы:",
+    "schedule": "Расписание:",
+    "experienceTitle": "Опыт",
+    "projectsTitle": "Проекты"
+  },
+  "minesweeper": {
+    "minesLeft": "Осталось мин",
+    "time": "Время",
+    "newGame": "Новая игра",
+    "flag": "Флажок",
+    "mine": "Мина",
+    "hidden": "Закрытая клетка",
+    "won": "Победа!",
+    "lost": "Бум! Нажмите на смайлик, чтобы сыграть ещё раз.",
+    "hint": "Правая кнопка мыши или долгое нажатие ставит флажок."
+  },
+  "credits": {
+    "title": "АВТОРЫ",
+    "portfolio": "ПОРТФОЛИО",
+    "contentAndTeaching": "Содержание",
+    "scene": "3D-СЦЕНА",
+    "sceneCode": "Код сцены и текстуры",
+    "computerModel": "Модель компьютера",
+    "roomModels": "Модели комнаты",
+    "sounds": "Звуковой дизайн",
+    "inspiration": "ВДОХНОВЕНИЕ",
+    "inspirationWhat": "Оригинал",
+    "license": "3D-сцена адаптирована из проекта portfolio-website Генри Хеффернана (Henry Heffernan) по лицензии MIT.",
+    "thanks": "Спасибо, что заглянули в моё портфолио <3"
   }
 }

@@ -5,17 +5,9 @@
     "description": "SAT Math 750, SAT 1440, IELTS 7.0. Namanganda SAT Matematika darslari: diagnostika, xatolar daftari va oʻquvchilar uchun oʻzim yaratgan vositalar."
   },
   "languages": {
-    "label": "Til",
     "uz": "Oʻzbek",
     "en": "English",
     "ru": "Русский"
-  },
-  "nav": {
-    "label": "Asosiy menyu",
-    "teach": "Nimani oʻrgataman",
-    "method": "Qanday oʻrgataman",
-    "tools": "Vositalar",
-    "contact": "Aloqa"
   },
   "hero": {
     "name": "Nurulloxon",
@@ -28,10 +20,7 @@
     "ielts": "IELTS",
     "satTotal": "SAT umumiy",
     "readingWriting": "Reading & Writing {score}",
-    "scoreAxisLabel": "SAT Math ballari 200 dan 800 gacha shkalada: {score}",
-    "contact": "Bogʻlanish",
-    "tools": "Oʻquvchi vositalari",
-    "sat": "SAT"
+    "scoreAxisLabel": "SAT Math ballari 200 dan 800 gacha shkalada: {score}"
   },
   "teach": {
     "title": "Nimani oʻrgataman",
@@ -109,9 +98,85 @@
     "qrAlt": "{url} manziliga olib boruvchi QR kod",
     "qrTodo": "TODO: sayt manzili"
   },
-  "footer": {
-    "studentLogin": "Oʻquvchi kabineti · tez orada",
-    "toDark": "☾ Tun rejimi",
-    "toLight": "☀ Kun rejimi"
+  "scene": {
+    "osTitle": "NurulloxonOS: Nurulloxonning portfolio ish stoli",
+    "skipLink": "3D sahnani oʻtkazib, portfolioni ochish",
+    "startTitle": "Nurulloxon Portfolio Showcase 2026",
+    "mobileWarning": "DIQQAT: Bu sahifani kompyuter yoki noutbukda koʻrish tavsiya etiladi.",
+    "clickStart": "Boshlash uchun START tugmasini bosing",
+    "start": "START",
+    "allLoaded": "Hammasi yuklandi, <b>‘Nurulloxon Portfolio Showcase’</b> V1.0 ishga tushirilmoqda",
+    "webglErrorTitle": "JIDDIY XATO:",
+    "webglErrorBody": "WebGL topilmadi",
+    "webglRequired": "3D sahna uchun WebGL kerak. Uni yoqing yoki WebGLni qoʻllab-quvvatlaydigan brauzerdan foydalaning.",
+    "openDesktop": "Portfolioni 3Dsiz ochish →",
+    "help": "Boshlash uchun istalgan joyni bosing",
+    "mute": "Ovozni oʻchirish",
+    "unmute": "Ovozni yoqish",
+    "freeCamOn": "Erkin kamera",
+    "freeCamOff": "Stolga qaytish"
+  },
+  "os": {
+    "name": "NurulloxonOS",
+    "start": "Start",
+    "language": "Til",
+    "shutDown": "Oʻchirish…",
+    "minimize": "Yigʻish",
+    "maximize": "Kattalashtirish",
+    "restore": "Tiklash",
+    "close": "Yopish",
+    "shuttingDown": "NurulloxonOS oʻchirilmoqda",
+    "safeToTurnOff": "Endi kompyuterni oʻchirsangiz boʻladi.",
+    "restart": "Qayta yoqish uchun istalgan joyni bosing",
+    "starting": "NurulloxonOS ishga tushmoqda"
+  },
+  "apps": {
+    "showcase": "Mening portfoliom",
+    "showcaseTitle": "Nurulloxon — Portfolio 2026",
+    "minesweeper": "Sapyor",
+    "credits": "Mualliflar"
+  },
+  "showcase": {
+    "edition": "Portfolio ’26",
+    "home": "BOSH SAHIFA",
+    "about": "MEN HAQIMDA",
+    "experience": "TAJRIBA",
+    "projects": "LOYIHALAR",
+    "contact": "ALOQA",
+    "copyright": "© 2026 Nurulloxon",
+    "stampLabel": "SAT Math {score} / {max}: men haqimda",
+    "welcome": "Xush kelibsiz",
+    "intro": "Men {name}man!",
+    "introText": "{location}da SAT Matematikadan dars beraman. Har bir oʻquvchi birinchi kuni diagnostik testdan boshlaydi, darslar esa aynan test koʻrsatgan eng zaif mavzular atrofida quriladi.",
+    "scoresTitle": "Natijalarim",
+    "formats": "Format:",
+    "schedule": "Jadval:",
+    "experienceTitle": "Tajriba",
+    "projectsTitle": "Loyihalar"
+  },
+  "minesweeper": {
+    "minesLeft": "Qolgan minalar",
+    "time": "Vaqt",
+    "newGame": "Yangi oʻyin",
+    "flag": "Bayroqcha",
+    "mine": "Mina",
+    "hidden": "Yopiq katak",
+    "won": "Gʻalaba!",
+    "lost": "Portladi! Qayta urinish uchun yuzchani bosing.",
+    "hint": "Bayroqcha qoʻyish uchun oʻng tugmani bosing yoki uzoq bosib turing."
+  },
+  "credits": {
+    "title": "MUALLIFLAR",
+    "portfolio": "PORTFOLIO",
+    "contentAndTeaching": "Mazmun",
+    "scene": "3D SAHNA",
+    "sceneCode": "Sahna kodi va teksturalar",
+    "computerModel": "Kompyuter modeli",
+    "roomModels": "Xona modellari",
+    "sounds": "Ovoz dizayni",
+    "inspiration": "ILHOM",
+    "inspirationWhat": "Asl nusxa",
+    "license": "3D sahna Henry Heffernanning portfolio-website loyihasidan MIT litsenziyasi asosida moslashtirilgan.",
+    "thanks": "Portfoliomni koʻrganingiz uchun rahmat <3"
   }
 }
