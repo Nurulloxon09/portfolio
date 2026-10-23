@@ -74,7 +74,8 @@
     "super": "Gamified college prep — a social platform for high school students.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Teacher login →"
+    "uteachLink": "Teacher login →",
+    "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
     "title": "Leadership",
@@ -99,14 +100,8 @@
   "scene": {
     "osTitle": "NurulloxonOS: Nurulloxon’s portfolio desktop",
     "skipLink": "Skip the 3D scene and open the portfolio",
-    "startTitle": "Nurulloxon Portfolio Showcase 2026",
-    "mobileWarning": "WARNING: This experience is best viewed on a desktop or laptop computer.",
-    "clickStart": "Click start to begin",
-    "start": "START",
-    "allLoaded": "All content loaded, launching <b>‘Nurulloxon Portfolio Showcase’</b> V1.0",
-    "webglErrorTitle": "CRITICAL ERROR:",
-    "webglErrorBody": "No WebGL detected",
-    "webglRequired": "The 3D scene needs WebGL. Turn it on or switch to a browser that supports it.",
+    "loading": "Loading",
+    "webglError": "This browser can’t show the 3D scene: WebGL is turned off or not supported.",
     "openDesktop": "Open the portfolio without 3D →",
     "help": "Click anywhere to begin",
     "mute": "Mute",

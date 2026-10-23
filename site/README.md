@@ -12,8 +12,8 @@ npm run lint     # typecheck
 
 ## Routes
 
-- `/uz`, `/en`, `/ru`: the 3D desk. A BIOS-style boot screen loads the models, then START. Click to walk
-  up to the desk; move the pointer over the screen to zoom in and use the desktop.
+- `/uz`, `/en`, `/ru`: the 3D desk. A plain loading screen (name, title, progress bar) fades into the
+  scene once the models are in. Click to walk up to the desk; move the pointer over the screen to zoom in and use the desktop.
 - `/uz/os`, `/en/os`, `/ru/os`: the desktop on its own. The monitor shows this page in an iframe, and it is
   also where phones, keyboards, screen readers and search engines get the content (the 3D page links to it).
 
@@ -23,7 +23,7 @@ All six pages are prerendered as static pages.
 
 - Text: `messages/*.json`. Untranslated facts (scores, contacts, links): `content/profile.ts`.
 - `scene/`: the Three.js scene (camera, renderer, monitor, audio). See `scene/README.md`.
-- `components/scene/`: the React overlay on the 3D page (boot screen, prompt, name and clock).
+- `components/scene/`: the React overlay on the 3D page (loading screen, prompt, name and clock).
 - `components/os/`: the desktop: windows, taskbar and Start menu, and the apps in `apps/`
   (My Portfolio and Minesweeper).
 - `public/scene/`: models, baked textures, sounds and the monitor's static-noise videos.

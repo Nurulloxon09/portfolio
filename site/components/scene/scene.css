@@ -1,4 +1,4 @@
-/* The 3D desk page: stacked render layers, the BIOS boot screen and the overlay.
+/* The 3D desk page: stacked render layers, the loading screen and the overlay.
    Adapted from henryjeff/portfolio-website (MIT). */
 
 .desk-scene {
@@ -79,132 +79,71 @@
   100% { transform: translate(0.075px, 0.025px); }
 }
 
-/* Boot screen */
+/* Loading screen */
 
-.boot {
+.loader {
   position: absolute;
   inset: 0;
-  display: flex;
+  display: grid;
+  place-items: center;
+  padding: 16px;
   background: #000;
-  letter-spacing: 0.8px;
-  transition:
-    opacity 0.2s ease-in-out,
-    transform 0.2s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
-.boot-hidden {
+.loader-hidden {
   opacity: 0;
-  transform: scale(1.1);
   pointer-events: none;
 }
 
-.boot-text {
+.loader-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
-.boot-header {
-  display: flex;
-  padding: 48px;
-}
-
-.boot-header-info {
-  margin-left: 64px;
-}
-
-.boot-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 0 48px;
-}
-
-.boot-footer {
-  padding: 48px 48px 64px;
-}
-
-.boot-spacer {
-  height: 16px;
-}
-
-.boot-resources {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 32px 32px;
-}
-
-.desk-scene .boot-green {
-  color: #00ff00;
-}
-
-.boot-red {
-  color: red;
-}
-
-.desk-scene .boot-warning {
-  color: yellow;
-}
-
-.boot-link {
-  color: #4598ff;
-}
-
-.boot-cursor-only {
-  position: absolute;
-  inset: 0;
-  padding: 48px;
-}
-
-.boot-popup-container {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 8px;
+  max-width: 420px;
+  text-align: center;
 }
 
-.boot-popup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 500px;
-  padding: 24px;
-  margin: 16px;
-  background: #000;
-  border: 7px solid #fff;
+.loader-name {
+  font-family: var(--font-display), serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.boot-prompt {
-  display: flex;
-  align-items: flex-end;
+.desk-scene .loader-title {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
+  color: #aaa;
 }
 
-.boot-start-row {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  margin-top: 24px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 0.2);
 }
 
-.bios-start-button {
-  padding: 8px;
-  background: #000;
-  color: #fff;
-  border: solid #fff;
-  border-width: 4px 3px;
-  font-family: monospace;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  cursor: pointer;
-}
-
-.bios-start-button:hover,
-.bios-start-button:focus-visible {
+.loader-bar-fill {
+  height: 100%;
   background: #fff;
-  color: #000;
-  outline: none;
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.desk-scene .loader-error {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.loader-link {
+  margin-top: 8px;
+  color: #fff;
+  font-family: var(--font-serif), "Times New Roman", serif;
+  font-size: 18px;
 }
 
 /* "Click anywhere to begin" */
@@ -294,23 +233,6 @@
 @media (max-width: 768px) {
   .desk-scene p {
     font-size: 10px;
-  }
-
-  .boot-header,
-  .boot-footer {
-    padding: 16px;
-  }
-
-  .boot-footer {
-    padding-bottom: 32px;
-  }
-
-  .boot-body {
-    padding: 0 16px;
-  }
-
-  .boot-cursor-only {
-    padding: 16px;
   }
 
   .blinking-cursor {

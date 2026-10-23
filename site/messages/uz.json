@@ -74,7 +74,8 @@
     "super": "Maktab oʻquvchilari uchun oliygohga tayyorlov — oʻyin uslubidagi ijtimoiy platforma.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Oʻqituvchi sifatida kirish →"
+    "uteachLink": "Oʻqituvchi sifatida kirish →",
+    "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
     "title": "Yetakchilik",
@@ -99,14 +100,8 @@
   "scene": {
     "osTitle": "NurulloxonOS: Nurulloxonning portfolio ish stoli",
     "skipLink": "3D sahnani oʻtkazib, portfolioni ochish",
-    "startTitle": "Nurulloxon Portfolio Showcase 2026",
-    "mobileWarning": "DIQQAT: Bu sahifani kompyuter yoki noutbukda koʻrish tavsiya etiladi.",
-    "clickStart": "Boshlash uchun START tugmasini bosing",
-    "start": "START",
-    "allLoaded": "Hammasi yuklandi, <b>‘Nurulloxon Portfolio Showcase’</b> V1.0 ishga tushirilmoqda",
-    "webglErrorTitle": "JIDDIY XATO:",
-    "webglErrorBody": "WebGL topilmadi",
-    "webglRequired": "3D sahna uchun WebGL kerak. Uni yoqing yoki WebGLni qoʻllab-quvvatlaydigan brauzerdan foydalaning.",
+    "loading": "Yuklanmoqda",
+    "webglError": "Bu brauzer 3D sahnani koʻrsata olmaydi: WebGL oʻchirilgan yoki qoʻllab-quvvatlanmaydi.",
     "openDesktop": "Portfolioni 3Dsiz ochish →",
     "help": "Boshlash uchun istalgan joyni bosing",
     "mute": "Ovozni oʻchirish",

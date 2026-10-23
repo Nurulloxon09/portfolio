@@ -243,6 +243,28 @@ function ExperiencePage() {
   );
 }
 
+type ProjectCardProps = { kicker: string; title: string; description: string; url: string; action: string };
+
+function ProjectCard({ kicker, title, description, url, action }: ProjectCardProps) {
+  return (
+    <div className="big-button">
+      <div className="big-button-screen" aria-hidden>
+        <span className="big-button-kicker-art">{kicker}</span>
+      </div>
+      <div className="big-button-body">
+        <p className="big-button-kicker">{kicker}</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p className="big-button-tags">
+          <a href={url} target="_blank" rel="noreferrer" className="site-button">
+            {action}
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function ProjectsPage() {
   const t = useTranslations("showcase");
   const tt = useTranslations("tools");
@@ -259,33 +281,22 @@ function ProjectsPage() {
       <h1>{t("projectsTitle")}</h1>
       <h3>{tt("title")}</h3>
       <div className="project-cards">
-        {cards.map((card) => (
-          <div key={card.id} className="big-button">
-            <div className="big-button-screen" aria-hidden>
-              <span className="big-button-kicker-art">{card.kicker}</span>
-            </div>
-            <div className="big-button-body">
-              <p className="big-button-kicker">{card.kicker}</p>
-              <h2>{card.title}</h2>
-              <p>{card.description}</p>
-              <p className="big-button-tags">
-                <a href={card.url} target="_blank" rel="noreferrer" className="site-button">
-                  {tt("open")}
-                </a>
-              </p>
-            </div>
-          </div>
+        {cards.map(({ id, ...card }) => (
+          <ProjectCard key={id} {...card} action={tt("open")} />
         ))}
       </div>
 
       <h3>{projects("title")}</h3>
+      <div className="project-cards">
+        <ProjectCard
+          kicker={projects("uteachKicker")}
+          title={projects("uteachName")}
+          description={projects("uteach")}
+          url={projectLinks.uteachUrl}
+          action={projects("uteachLink")}
+        />
+      </div>
       <div className="text-block">
-        <p>
-          <b>{projects("uteachName")}</b> — {projects("uteach")}{" "}
-          <a href={projectLinks.uteachUrl} target="_blank" rel="noreferrer">
-            {projects("uteachLink")}
-          </a>
-        </p>
         <p>
           <b>{projects("superName")}</b> — {projects("super")}
         </p>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Application from "@/scene/Application";
 import { dispatch } from "@/scene/events";
@@ -48,11 +48,10 @@ export default function DeskScene({ osUrl }: { osUrl: string }) {
     };
   }, [osUrl, osTitle]);
 
-  const start = () => {
-    app.current?.resumeAudio();
+  const start = useCallback(() => {
     dispatch("loadingScreenDone");
     setStarted(true);
-  };
+  }, []);
 
   return (
     <div className="desk-scene">
@@ -62,7 +61,7 @@ export default function DeskScene({ osUrl }: { osUrl: string }) {
       <div className="desk-ui-interactive">{started && <InfoOverlay />}</div>
       <div className="desk-ui" style={{ pointerEvents: started ? "none" : "auto" }}>
         {started && <HelpPrompt />}
-        <LoadingScreen webGLError={webGLError} osUrl={osUrl} onStart={start} />
+        <LoadingScreen webGLError={webGLError} osUrl={osUrl} onDone={start} />
       </div>
       <div className="desk-videos" aria-hidden>
         <video ref={video1} muted loop autoPlay playsInline src="/scene/textures/static-base.mp4" />

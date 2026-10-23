@@ -65,11 +65,6 @@ export default class Application {
     });
   }
 
-  /** Unlocks audio; call from the click that starts the experience. */
-  resumeAudio() {
-    this.world.audio?.resume();
-  }
-
   destroy() {
     this.controller.abort();
     this.sizes.off("resize");

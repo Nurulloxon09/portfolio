@@ -74,7 +74,8 @@
     "super": "Подготовка к поступлению в игровой форме — социальная платформа для школьников.",
     "uteachName": "uteach",
     "superName": "SUper",
-    "uteachLink": "Вход для учителя →"
+    "uteachLink": "Вход для учителя →",
+    "uteachKicker": "EdTech · SaaS"
   },
   "leadership": {
     "title": "Лидерство",
@@ -99,14 +100,8 @@
   "scene": {
     "osTitle": "NurulloxonOS: рабочий стол с портфолио Нуруллохона",
     "skipLink": "Пропустить 3D-сцену и открыть портфолио",
-    "startTitle": "Nurulloxon Portfolio Showcase 2026",
-    "mobileWarning": "ВНИМАНИЕ: эту страницу лучше смотреть на компьютере или ноутбуке.",
-    "clickStart": "Нажмите START, чтобы начать",
-    "start": "START",
-    "allLoaded": "Всё загружено, запускается <b>‘Nurulloxon Portfolio Showcase’</b> V1.0",
-    "webglErrorTitle": "КРИТИЧЕСКАЯ ОШИБКА:",
-    "webglErrorBody": "WebGL не найден",
-    "webglRequired": "Для 3D-сцены нужен WebGL. Включите его или откройте сайт в браузере, который его поддерживает.",
+    "loading": "Загрузка",
+    "webglError": "Этот браузер не может показать 3D-сцену: WebGL выключен или не поддерживается.",
     "openDesktop": "Открыть портфолио без 3D →",
     "help": "Нажмите в любом месте, чтобы начать",
     "mute": "Выключить звук",
