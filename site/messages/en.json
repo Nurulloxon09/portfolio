@@ -94,7 +94,7 @@
     "phone": "Phone",
     "copy": "Copy",
     "copied": "Copied",
-    "qrNote": "A QR code that leads to this page — for printing on a business card.",
+    "qrNote": "Scan to message me on Telegram.",
     "qrAlt": "QR code linking to {url}"
   },
   "scene": {

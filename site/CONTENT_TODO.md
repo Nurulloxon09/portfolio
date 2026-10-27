@@ -6,11 +6,9 @@ There are no TODO chips on the site any more. Untranslated facts live in `conten
 
 | What | Where it shows | How to add it |
 |---|---|---|
-| Telegram username | Contact page, with a Copy button | Set `contact.telegram` in `content/profile.ts` |
 | Phone number | Contact page, with a Copy button | Set `contact.phone` in `content/profile.ts` |
-| Site URL for the QR code | Contact page | Automatic on Vercel (production domain); otherwise set `NEXT_PUBLIC_SITE_URL` |
 
-Until Telegram or the phone number is set, the Contact page only shows the QR code.
+Telegram (`contact.telegram`, now @sobitxoniy) shows on the Contact page with a Copy button, and the page's QR code opens it.
 
 ## Baked into the 3D textures
 
