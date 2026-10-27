@@ -41,4 +41,4 @@ site; the original's desktop repository has no license, so none of its code or a
 ## Deploy on Vercel
 
 Import the repo and set **Root Directory** to `site`. No environment variables are needed. The contact QR
-code points to the production `*.vercel.app` domain unless `NEXT_PUBLIC_SITE_URL` is set.
+code opens the Telegram account in `content/profile.ts`.

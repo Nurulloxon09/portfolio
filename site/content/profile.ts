@@ -11,9 +11,13 @@ export const scores = {
 };
 
 export const contact = {
-  telegram: null as string | null, // e.g. "@username"
+  telegram: "@sobitxoniy" as string | null, // also what the Contact page's QR code opens
   phone: null as string | null, // e.g. "+998 90 123 45 67"
 };
+
+export function telegramUrl(): string | null {
+  return contact.telegram ? `https://t.me/${contact.telegram.replace(/^@/, "")}` : null;
+}
 
 // Live links for the Projects page
 export const tools = {

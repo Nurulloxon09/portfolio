@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { contact, scores, tools } from "@/content/profile";
+import { contact, scores, telegramUrl, tools } from "@/content/profile";
 import { CopyButton } from "../CopyButton";
 
 export type QrCode = { url: string; svg: string };
@@ -320,8 +320,9 @@ function ContactPage({ qr }: { qr: QrCode | null }) {
   const t = useTranslations("contact");
   // Each row appears once its value is filled in content/profile.ts
   const rows: { label: string; value: string; href: string }[] = [];
-  if (contact.telegram) {
-    rows.push({ label: t("telegram"), value: contact.telegram, href: `https://t.me/${contact.telegram.replace(/^@/, "")}` });
+  const telegram = telegramUrl();
+  if (contact.telegram && telegram) {
+    rows.push({ label: t("telegram"), value: contact.telegram, href: telegram });
   }
   if (contact.phone) {
     rows.push({ label: t("phone"), value: contact.phone, href: `tel:${contact.phone.replace(/[^+\d]/g, "")}` });

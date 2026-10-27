@@ -94,7 +94,7 @@
     "phone": "Telefon",
     "copy": "Nusxa olish",
     "copied": "Nusxa olindi",
-    "qrNote": "Shu sahifaga olib boruvchi QR — vizitkaga chop etish uchun.",
+    "qrNote": "Telegramda yozish uchun skanerlang.",
     "qrAlt": "{url} manziliga olib boruvchi QR kod"
   },
   "scene": {
